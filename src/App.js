@@ -4,7 +4,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        DICOM
+        <div>
+            DICOM
+        </div>
+        <div>
+            team
+        </div>
       </header>
     </div>
   );
