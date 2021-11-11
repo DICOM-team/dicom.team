@@ -1,12 +1,16 @@
 .App {
   text-align: center;
+  max-width: 700px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.CardsButtons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-
+.CopyRight {
+  color: #0070A5;
+  font-size: 14px;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -14,14 +18,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #0070A5;
 }
 
 .App-link {
