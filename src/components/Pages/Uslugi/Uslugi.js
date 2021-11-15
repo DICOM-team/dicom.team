@@ -1,9 +1,9 @@
 import React from 'react';
-import s from "../Pages/Main/Main.module.css";
+import s from "../Main/Main.module.css";
 import {Link} from "react-router-dom";
-import logo from "../../img/logo.svg";
+import logo from "../../../img/logo.svg";
 
-const Politic = () => {
+const Uslugi = () => {
     return (
         <div>
             <div className="App">
@@ -12,7 +12,11 @@ const Politic = () => {
                     <Link to={'/'}><img src={logo} alt="DICOM компания"/></Link>
                 </div>
                 <div>
-                    <h1>Политика конфиденциальности</h1>
+                    <h3>Разработаем мобильное приложение <br/>
+                    с пожизненной гарантией</h3>
+                    в 2 раза быстрее, от 200 000 руб. <br/>
+                    За счет использования современных <br/>
+                    кросс-платформенных решений Flutter
                 </div>
                 <div className={'CopyRight'}>
                     <Link to={'/Politic'}>политика конфиденциальности </Link><br/>
@@ -24,4 +28,4 @@ const Politic = () => {
     );
 };
 
-export default Politic;
+export default Uslugi;
