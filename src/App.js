@@ -11,6 +11,9 @@ function App() {
             <Routes>
                 <Route exact path="/" element={ <Main /> }/>
                 <Route exact path="/Politic" element={ <Politic /> }/>
+                <Route exact path="/admin" element={ <Admin /> }/>
+                <Route exact path="/moder" element={ <Moder /> }/>
+                <Route exact path="/user" element={ <User /> }/>
                 <Route exact path="/Contacts" element={ <Contacts /> }/>
             </Routes>
         </BrowserRouter>
