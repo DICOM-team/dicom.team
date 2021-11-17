@@ -5,9 +5,44 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+a {
+  text-decoration: none;
+}
+.App {
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.34);
+  padding: 40px;
+  border-radius: 40px;
+}
+.CardsButtons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.CopyRight {
+  margin: 40px;
+  color: #b9b9b9;
+  font-size: 14px;
+}
+.CopyRight>a {
+  color: #b9b9b9;
+}
+
+.App-header {
+  /*min-height: 80vh;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+

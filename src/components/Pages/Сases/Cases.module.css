@@ -1,0 +1,6 @@
+.cases {
+    display: flex;
+}
+.cases>div {
+    width: 50%;
+}
