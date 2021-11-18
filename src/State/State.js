@@ -8,6 +8,6 @@ export let mainMenu = {
         {name: 'Контакты', urm: '/contacts', img: '/img/contacts.png'},
         {name: 'Продвижение', urm: '/promotion', img: '/img/defaultCards.png'},
         {name: 'Битрикс24', urm: '/bitrix24', img: '/img/bitrix24.png'},
-        {name: '1C', urm: '/1c', img: '/img/defaultCards.png'}
+        {name: '1C', urm: '/1c', img: '/img/1с.png'}
     ]
 }

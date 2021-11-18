@@ -8,10 +8,6 @@ body {
   text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 a {
   text-decoration: none;
 }
@@ -43,13 +39,12 @@ a {
 .CopyRight>a {
   color: #b9b9b9;
 }
-
-.App-header {
-  /*min-height: 80vh;*/
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/*Стили кнопок*/
+.button {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgba(35, 231, 231, 0.5);
+  font-size: 20px;
 }
-
