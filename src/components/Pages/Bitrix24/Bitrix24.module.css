@@ -1,0 +1,22 @@
+.img {
+    width: 50%;;
+}
+.img>img {
+    border-radius: 20px
+}
+.description {
+    border-radius: 20px;
+}
+.body {
+    display: flex;
+    flex-wrap: wrap;
+}
+.description>p {
+    text-align: left;
+    padding-left: 20px;
+}
+@media (max-width: 700px) {
+    .img {
+        width: 100%;
+    }
+}

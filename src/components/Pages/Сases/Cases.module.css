@@ -1,6 +1,21 @@
 .cases {
     display: flex;
+    flex-wrap: wrap;
+}
+.cases>div>img {
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 .cases>div {
-    width: 50%;
+    width: 47%;
+}
+@media (max-width: 700px) {
+    .cases>div {
+        width: 100%;
+    }
+}
+.description {
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
