@@ -1,11 +1,10 @@
-
 export let mainMenu = {
     items: [
-        {name: 'Услуги', urm: '/uslugi', img: '/img/defaultCards.png'},
-        {name: 'Сервисы', urm: '/services', img: '/img/defaultCards.png'},
-        {name: 'Кейсы', urm: '/cases', img: '/img/defaultCards.png'},
-        {name: 'Команда', urm: '/team', img: '/img/defaultCards.png'},
-        {name: 'Вакансии', urm: '/vacancys', img: '/img/defaultCards.png'},
+        {name: 'Услуги', urm: '/uslugi', img: '/img/icon1.png'},
+        {name: 'Сервисы', urm: '/services', img: '/img/icon1.png'},
+        {name: 'Кейсы', urm: '/cases', img: '/img/icon3.png'},
+        {name: 'Команда', urm: '/team', img: '/img/icon3.png'},
+        {name: 'Вакансии', urm: '/vacancys', img: '/img/icon3.png'},
         {name: 'Контакты', urm: '/contacts', img: '/img/contacts.png'},
         {name: 'Продвижение', urm: '/promotion', img: '/img/defaultCards.png'},
         {name: 'Битрикс24', urm: '/bitrix24', img: '/img/bitrix24.png'},
