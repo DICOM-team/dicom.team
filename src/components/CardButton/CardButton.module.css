@@ -5,18 +5,24 @@
     border-radius: 10px;
     margin: 20px 20px 10px 20px;
     box-shadow: 0 5px 38px 0 rgba(0, 0, 0, 0.2);
-    /*background-color: rgba(0, 0, 0, 0.67);*/
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0.03);
 }
-@media (max-width: 700px) {
+@media (max-width: 500px) {
     .body {
-        width: 50px;
-        height: 50px;
+        width: 20vw;
+        height: 20vw;
         margin: 15px 15px 10px 15px;
     }
     .body:hover {
-        width: 50px!important;
-        height: 50px!important;
+        width: 20vw!important;
+        height: 20vw!important;
         margin: 15px 15px 10px 15px!important;
+    }
+    .name {
+        font-size: 3vw!important;
     }
 }
 .body:hover {

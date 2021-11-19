@@ -10,6 +10,7 @@ import Services from "./components/Pages/Services/Services";
 import Cases from "./components/Pages/Сases/Сases";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Bitrix24 from "./components/Pages/Bitrix24/Bitrix24";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -28,7 +29,7 @@ ReactDOM.render(
               <Route exact path="/team" element={ <Contacts /> }/>
               <Route exact path="/vacancys" element={ <Contacts /> }/>
               <Route exact path="/promotion" element={ <Contacts /> }/>
-              <Route exact path="/bitrix24" element={ <Contacts /> }/>
+              <Route exact path="/bitrix24" element={ <Bitrix24 /> }/>
               <Route exact path="/1c" element={ <Contacts /> }/>
           </Routes>
           </div>

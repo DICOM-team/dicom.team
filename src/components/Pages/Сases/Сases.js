@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './Cases.module.css'
-import logo from '../../../img/logo.svg'
 
 const Cases = () => {
     return (
@@ -8,9 +7,9 @@ const Cases = () => {
             <h3>Кейсы</h3>
             <div className={s.cases}>
                 <div>
-                    <img src={logo}/>
+                    <img width={'100%'} src={'https://www.dmddesign.co.uk/wp-content/uploads/2015/01/responsive-website-screen-mockup-trust.jpg'} alt=''/>
                 </div>
-                <div>Павел пришел к нам с задачей "Требуется сделать сайт не как у всех и продвинуть его в Яндексе" <br/>
+                <div className={s.description}>Павел пришел к нам с задачей "Требуется сделать сайт не как у всех и продвинуть его в Яндексе" <br/>
                     <br/>
                     Мы предложили Павлу сделать сайта с динамическим  бекграундом. <br/>
                     В списке задач стояла задача продвинуть сайт по 150 запросам в яндексе. <br/>
