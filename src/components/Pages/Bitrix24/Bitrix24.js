@@ -1,12 +1,17 @@
 import React from 'react';
 import s from './Bitrix24.module.css'
+import {Link} from "react-router-dom";
 const Bitrix24 = () => {
     return (
         <div className={'App'}>
             <h1>Внедряем Битрикс24</h1>
+            <p className={'accent'}>
+                За 10 лет более 20+ крупных проектов <br/>
+                Я сам подготовлю ТЗ после серии встреч в Zoom/Skype. Личные встречи только в Чебоксарах. <br/>
+            </p>
             <div className={s.body}>
                 <div className={s.img}>
-                    <img width={'100%'} src="https://cdn-ru.bitrix24.ru/b18262870/landing/07f/07f2c20c6fafe94d95782a4fd8eac06e/2e6b40e17adfe8e6691a56d858ca75ff_2x.png" alt=""/>
+                    <img width={'100%'} src={'/img/content/Bitirx24.png'} alt=""/>
                 </div>
                 <div className={s.description}>
                     <h3>ЧТО ТАКОЕ БИТРИКС24</h3>
@@ -24,12 +29,16 @@ const Bitrix24 = () => {
                     </p>
                 </div>
             </div>
-            <p>
-                За 10 лет более 20+ крупных проектов <br/>
-                Я сам подготовлю ТЗ после серии встреч в Zoom/Skype или личные. <br/>
+            <br/>
+            <p className={'text-center'}>
+                <h3>ЧЕРЕЗ 2 НЕДЕЛИ УЖЕ НАЧНЕТЕ РАБОТАТЬ В БИТРИКС 24</h3>
+                Внедрение всего функционала Битрикс24 может составлять от 1 месяца до года.
             </p>
+            <br/><br/>
+            <a className={'link'} href="https://www.bitrix24.ru/?p=14113838">Подробнее с Битрикс24 можно ознакомиться на официальном сайте</a>
+            <br/><br/><br/>
             <div>
-                <button className={'button'}>Заказать</button>
+                <button className={'button'}>Заказать бесплатную часовую консультацию</button><Link to={'/consult'}><span className={'link'}>подробнее</span></Link>
             </div>
         </div>
     );
