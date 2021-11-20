@@ -1,19 +1,17 @@
 .img {
-    width: 50%;;
-}
-.img>img {
-    border-radius: 20px
+    width: 200px;;
 }
 .description {
     border-radius: 20px;
+    padding: 0px 40px;
 }
 .body {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 .description>p {
     text-align: left;
-    padding-left: 20px;
 }
 @media (max-width: 700px) {
     .img {
