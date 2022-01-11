@@ -26,11 +26,11 @@ a {
   box-shadow: 0 4px 4px -4px white;
 }
 .App {
-  text-align: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.34);
-  padding: 40px;
-  border-radius: 40px;
+  /* Rectangle 44 */
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(21px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 44px;
 }
 .App>p {
   text-align: left;
@@ -53,11 +53,11 @@ a {
 }
 .CopyRight {
   margin: 40px;
-  color: #b9b9b9;
+  color: #494D4E;
   font-size: 14px;
 }
 .CopyRight>a {
-  color: #b9b9b9;
+  color: #494D4E;
 }
 /*Стили кнопок*/
 .button {
