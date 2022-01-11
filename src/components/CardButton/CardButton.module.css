@@ -1,14 +1,14 @@
 .body {
-    border: 1px solid rgba(32, 4, 59, 0.67);
+    /*border: 1px solid rgba(32, 4, 59, 0.67);*/
     width: 100px;
     height: 100px;
     border-radius: 10px;
     margin: 20px 20px 10px 20px;
-    box-shadow: 0 5px 38px 0 rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 5px 38px 0 rgba(0, 0, 0, 0.2);*/
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: rgba(255, 255, 255, 0.03);
+    /*background-color: rgba(255, 255, 255, 0.03);*/
 }
 @media (max-width: 500px) {
     .body {
@@ -32,7 +32,7 @@
     transition: ALL 0.4s linear;
 }
 .name {
-    color: White;
+    color: #494D4E;
     font-size: 14px;
     padding-bottom: 10px;
 }
