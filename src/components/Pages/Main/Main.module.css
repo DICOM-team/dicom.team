@@ -1,3 +1,18 @@
 .logo {
     margin: 40px;
 }
+.logo img {
+    width: 50%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+@media (max-width: 800px) {
+    .logo {
+        margin: 10px;
+    }
+    .logo img {
+        width: 70%;
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+}

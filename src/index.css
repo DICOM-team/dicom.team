@@ -42,8 +42,8 @@ a {
     background-color: rgba(185, 185, 185, 0);
   }
   body {
-    background-position: 100%;
-    background-size: auto!important;
+    /*background-position: 100%;*/
+    /*background-size: auto!important;*/
   }
 }
 .CardsButtons {
