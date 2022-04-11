@@ -8,6 +8,9 @@ const Header = () => {
         <div>
             <div className={s.logo}>
                 <Link to={'/'}><img src={logo} alt="DICOM компания"/></Link>
+                <p>
+                    Нажмите на логотип, чтобы вернуться на домашнюю станицу
+                </p>
             </div>
         </div>
     );
