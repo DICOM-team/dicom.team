@@ -6,7 +6,9 @@ const Popup = props => {
         <div className={s.popupBox}>
             <div className={s.box}>
                 <span className={s.closeIcon} onClick={props.handleClose}>x</span>
-                {props.content}
+                <p>
+                    {props.content}
+                </p>
             </div>
         </div>
     );

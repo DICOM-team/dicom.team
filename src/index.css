@@ -65,7 +65,7 @@ a {
 }
 @media (max-width: 800px) {
   .App {
-    padding: 20px;
+    padding: 10%;
     border-radius: 0;
     /*background-color: rgba(185, 185, 185, 0.46);*/
   }

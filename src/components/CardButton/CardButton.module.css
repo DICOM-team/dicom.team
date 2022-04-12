@@ -1,7 +1,7 @@
 .body {
     /*border: 1px solid rgba(32, 4, 59, 0.67);*/
-    width: 8vw;
-    height: 8vw;
+    width: 10vw;
+    height: 10vw;
     border-radius: 10px;
     /* margin: 20px 20px 10px 20px; */
     /*box-shadow: 0 5px 38px 0 rgba(0, 0, 0, 0.2);*/
@@ -10,24 +10,14 @@
     background-repeat: no-repeat;
     /*background-color: rgba(255, 255, 255, 0.03);*/
 }
-@media (max-width: 700px) {
+@media (max-width: 760px) {
     .body {
         width: 25vw;
         height: 25vw;
         /* margin: 15px 15px 10px 15px; */
     }
     .name {
-        /*font-size: 5vw!important;*/
-    }
-}
-@media (max-width: 900px) {
-    .body {
-        width: 15vw;
-        height: 15vw;
-        /* margin: 15px 15px 10px 15px; */
-    }
-    .name {
-        /*font-size: 5vw!important;*/
+        font-size: 5vw!important;
     }
 }
 .cardHover:hover {
