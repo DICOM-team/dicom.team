@@ -1,16 +1,25 @@
 // import React from 'react';
-import React, { useState } from 'react';
+import React from 'react';
 import s from './Bitrix24.module.css';
 import {Link} from "react-router-dom";
-import Popup from '../../PopUp/Popup';
+import Button from '../../Blocks/ButtonForm/ButtonForm';
 const Bitrix24 = () => {
     // запоминаем состояние окна открыто ил изакрыто
-    const [isOpen, setIsOpen] = useState(false);
-    const togglePopup = () => {
-        setIsOpen(!isOpen);
-    }
+
     return (
         <div className={'App'}>
+            <Button name={'Заказать бесплатную часовую консультацию'} content={<>
+                <h3>Бесплатная часовая консультация</h3>
+                <br/><br/>
+                <p className={s.description}>
+                <input type="text"/>Имя <br/>
+                <br/>
+                <input type="text"/>Телефон <br/>
+                <br/>
+                </p>
+                <button>Отправить</button>
+                </>}
+            />
             <div className={s.block}>
                 <h1>Внедряем Битрикс24
                     <p>
@@ -84,31 +93,6 @@ const Bitrix24 = () => {
             <div className={s.block}>
                 <a className={'link'} href="https://www.bitrix24.ru/?p=14113838">Подробнее с Битрикс24 можно ознакомиться на официальном сайте</a>
             </div>
-            <div className={s.block}>
-                {/*Вызов модального окна*/}
-                <input
-                    className={'button'}
-                    type="button"
-                    value="Заказать бесплатную часовую консультацию"
-                    onClick={togglePopup}
-                />
-            </div>
-
-            {/*Контекст popup*/}
-            {isOpen && <Popup
-                content={<>
-                    <h3>Форма обратной связи</h3>
-                    <br/><br/>
-                    <p className={s.description}>
-                        <input type="text"/>Имя <br/>
-                        <br/>
-                        <input type="text"/>Телефон <br/>
-                        <br/>
-                    </p>
-                    <button>Отправить</button>
-                </>}
-                handleClose={togglePopup}
-            />}
 
         </div>
     );
