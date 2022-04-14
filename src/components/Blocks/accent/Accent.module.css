@@ -1,0 +1,9 @@
+.accent {
+    /*background-color: #c10865;*/
+    background-color: #7d9900;
+    padding: 40px;
+    border-radius: 20px;
+    font-size: calc(1rem + .6vw);
+    margin: 0 40px;
+    color: white;
+}

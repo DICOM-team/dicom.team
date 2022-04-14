@@ -74,8 +74,8 @@ a {
     /*background-size: auto!important;*/
   }
   #root {
-    padding-left: 0%;
-    padding-right: 0%;
+    padding-left: 0;
+    padding-right: 0;
   }
   h1 {
     padding: 20px 0 20px 0;
@@ -107,12 +107,3 @@ a {
 }
 
 /*Оформление текста*/
-.accent {
-  /*background-color: #c10865;*/
-  background-color: #7d9900;
-  padding: 40px;
-  border-radius: 20px;
-  font-size: calc(1.7rem + .6vw);
-  margin: 0px 40px;
-  color: white;
-}

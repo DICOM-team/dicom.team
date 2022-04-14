@@ -1,14 +1,22 @@
 // import React from 'react';
 import React from 'react';
 import s from './Bitrix24.module.css';
-import {Link} from "react-router-dom";
-import Button from '../../Blocks/ButtonForm/ButtonForm';
+// import {Link} from "react-router-dom";
+import ButtonForm from '../../Blocks/ButtonForm/ButtonForm';
+import Title_h1 from "../../Blocks/Title_H1/Title_h1";
+import Title_h2 from "../../Blocks/Title_H2/Title_h2";
+import Accent from "../../Blocks/accent/Accent";
 const Bitrix24 = () => {
     // запоминаем состояние окна открыто ил изакрыто
 
     return (
         <div className={'App'}>
-            <Button name={'Заказать бесплатную часовую консультацию'} content={<>
+
+            <Title_h1 name={'Внедряем Битрикс24'} subname={'Хорошее дело быстрым не бывает'} />
+            <Accent context={<>За 10 лет более 20+ крупных проектов <br/>
+                            Я сам подготовлю ТЗ после серии встреч в Zoom/Skype. <br/>
+                            <b>Личные встречи только в Чебоксарах.</b></>}/>
+            <ButtonForm name={'Заказать бесплатную часовую консультацию'} content={<>
                 <h3>Бесплатная часовая консультация</h3>
                 <br/><br/>
                 <p className={s.description}>
@@ -20,20 +28,8 @@ const Bitrix24 = () => {
                 <button>Отправить</button>
                 </>}
             />
-            <div className={s.block}>
-                <h1>Внедряем Битрикс24
-                    <p>
-                        Хорошее дело быстрым не бывает
-                    </p>
-                </h1>
-            </div>
-            <div className={s.block}>
-                <p className={'accent'}>
-                    За 10 лет более 20+ крупных проектов <br/>
-                    Я сам подготовлю ТЗ после серии встреч в Zoom/Skype. <br/>
-                    <b>Личные встречи только в Чебоксарах.</b> <br/>
-                </p>
-            </div>
+
+
             <div className={s.block}>
                 <div className={s.body}>
                     <div className={s.item}>
@@ -42,7 +38,7 @@ const Bitrix24 = () => {
                     </div>
                     <div className={s.item}>
                         <div className={s.description}>
-                            <h3>Что такое Битрикс24</h3>
+                            <Title_h2 name={'Что такое Битрикс24'} subname={'основной функционал'} />
                             <p>
                                 - Быстрый поиск контактов сотрудников. <br/>
                                 - Управление документами.<br/>
@@ -59,16 +55,12 @@ const Bitrix24 = () => {
                     </div>
                 </div>
             </div>
+
             <div className={s.block}>
-                <p className={'text-center'}>
-                    <h3>Через 2 недели уже начнете работать в Битрикс24</h3>
-                    Внедрение всего функционала Битрикс24 может составлять от 1 месяца до года.
-                </p>
+                <Title_h2 name={'Через 2 недели уже начнете работать в Битрикс24'} subname={'Внедрение всего функционала Битрикс24 может составлять от 1 месяца до года.'} />
             </div>
             <div className={s.block}>
-                <h2>
-                    Как мы работаем
-                </h2>
+                <Title_h2 name={'Как мы работаем'} subname={'этапы проекта'} />
             </div>
             <div className={s.block}>
                 <div className={s.item100}>
