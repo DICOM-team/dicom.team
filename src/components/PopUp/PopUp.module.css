@@ -2,7 +2,7 @@
 /*Всплывающее окно*/
 .popupBox {
     position: fixed;
-    background: #00000050;
+    background: rgba(0, 0, 0, 0.68);
     width: 100%;
     height: 100vh;
     top: 0;

@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5 {
   letter-spacing: 1px;
 }
 h1 {
-  padding: 50px 0 50px 0;
+  /*padding: 50px 0 50px 0;*/
   font-size: calc(3.3rem + .6vw);
   text-transform: uppercase;
 }
@@ -43,7 +43,7 @@ body {
   font-size: calc(0.5em + .5vw);
   letter-spacing: 1px;
   background-attachment: fixed;
-  color: white;
+  /*color: white;*/
 }
 a {
   text-decoration: none;
@@ -55,7 +55,7 @@ a {
 }
 .App {
   /* Rectangle 44 */
-  background: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.14);
   backdrop-filter: blur(70px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 44px;
@@ -103,4 +103,7 @@ a {
   color: white;
 }
 
-/*Оформление текста*/
+.Lage_text {
+  font-size: calc(1rem + .6vw);
+  Color: grey;
+}
