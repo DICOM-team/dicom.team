@@ -1,7 +1,7 @@
 export let mainMenu = {
     items: [
         {name: 'Услуги', urm: '/uslugi', img: '/img/dicomYslugi.png'},
-        // {name: 'Сервисы', urm: '/services', img: '/img/icon1.png'},
+        {name: 'Сервисы', urm: '/services', img: '/img/icon1.png'},
         {name: 'Кейсы', urm: '/cases', img: '/img/dicomCase.png'},
         {name: 'Команда', urm: '/team', img: '/img/dicomCommand.png'},
         {name: 'Контакты', urm: '/contacts', img: '/img/dicomContacts.png'},

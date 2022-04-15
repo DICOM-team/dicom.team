@@ -6,6 +6,7 @@ import ButtonForm from '../../Blocks/ButtonForm/ButtonForm';
 import Title_h1 from "../../Blocks/Title_H1/Title_h1";
 import Title_h2 from "../../Blocks/Title_H2/Title_h2";
 import Accent from "../../Blocks/accent/Accent";
+import Separator from "../../Blocks/Separator/Separator";
 const Bitrix24 = () => {
     // запоминаем состояние окна открыто ил изакрыто
 
@@ -16,6 +17,7 @@ const Bitrix24 = () => {
             <Accent context={<>За 10 лет более 20+ крупных проектов <br/>
                             Я сам подготовлю ТЗ после серии встреч в Zoom/Skype. <br/>
                             <b>Личные встречи только в Чебоксарах.</b></>}/>
+
             <ButtonForm name={'Заказать бесплатную часовую консультацию'} content={<>
                 <h3>Бесплатная часовая консультация</h3>
                 <br/><br/>
@@ -28,8 +30,7 @@ const Bitrix24 = () => {
                 <button>Отправить</button>
                 </>}
             />
-
-
+            <Separator />
             <div className={s.block}>
                 <div className={s.body}>
                     <div className={s.item}>
@@ -55,13 +56,10 @@ const Bitrix24 = () => {
                     </div>
                 </div>
             </div>
-
-            <div className={s.block}>
-                <Title_h2 name={'Через 2 недели уже начнете работать в Битрикс24'} subname={'Внедрение всего функционала Битрикс24 может составлять от 1 месяца до года.'} />
-            </div>
-            <div className={s.block}>
-                <Title_h2 name={'Как мы работаем'} subname={'этапы проекта'} />
-            </div>
+            <Separator />
+            <Title_h2 name={'Через 2 недели уже начнете работать в Битрикс24'} subname={'Внедрение всего функционала Битрикс24 может составлять от 1 месяца до года.'} />
+            <Separator />
+            <Title_h2 name={'Как мы работаем'} subname={'этапы проекта'} />
             <div className={s.block}>
                 <div className={s.item100}>
                     Аудит

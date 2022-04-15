@@ -20,6 +20,13 @@
         font-size: 5vw!important;
     }
 }
+@media (min-width: 1024px) {
+    .body {
+        width: 6vw;
+        height: 6vw;
+        /* margin: 15px 15px 10px 15px; */
+    }
+}
 .cardHover:hover {
     transform: scale(1.1);
     /* width: 110px;
@@ -31,7 +38,8 @@
     transition: .3s;
 }
 .name {
-    color: #494D4E;
+    /*color: #494D4E;*/
+    color: black;
     font-size: calc(1em + .6vw);
     padding-bottom: 10px;
     padding-top: 30px;
