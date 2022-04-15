@@ -16,3 +16,11 @@
         padding-bottom: 5vh;
     }
 }
+.CardsButtons {
+    /* display: flex; */
+    justify-content: left;
+    flex-wrap: wrap;
+}
+.card {
+    /*max-width: 200px;*/
+}

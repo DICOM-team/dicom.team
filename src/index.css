@@ -43,6 +43,7 @@ body {
   font-size: calc(0.5em + .5vw);
   letter-spacing: 1px;
   background-attachment: fixed;
+  color: white;
 }
 a {
   text-decoration: none;
@@ -54,11 +55,11 @@ a {
 }
 .App {
   /* Rectangle 44 */
-  background: rgba(255, 255, 255, 0.46);
-  backdrop-filter: blur(21px);
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(70px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 44px;
-  padding: 60px 0;
+  padding: 60px;
 }
 .App>p {
   text-align: left;
@@ -82,11 +83,7 @@ a {
     /*font-size: calc(2.3rem + .6vw);*/
   }
 }
-.CardsButtons {
-  /* display: flex; */
-  justify-content: center;
-  flex-wrap: wrap;
-}
+
 .CopyRight {
   margin: 40px;
   color: #494D4E;
