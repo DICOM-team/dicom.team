@@ -59,8 +59,8 @@ a {
   /*background: rgba(255, 255, 255, 0.14);*/
   backdrop-filter: blur(70px);
   /* Note: backdrop-filter has minimal browser support */
-  border-radius: 44px;
-  padding: 60px;
+  /*border-radius: 44px;*/
+  padding: 0 60px;
 }
 .App>p {
   text-align: left;

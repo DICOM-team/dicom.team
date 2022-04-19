@@ -15,25 +15,21 @@ import Bitrix24 from "./components/Pages/Bitrix24/Bitrix24";
 ReactDOM.render(
   <React.StrictMode>
       <BrowserRouter >
-          <div>
+          <div className="App">
               <Header/>
-          </div>
-          <div>
-          <Routes>
-              <Route exact path="/" element={ <Main /> }/>
-              <Route exact path="/Politic" element={ <Politic /> }/>
-              <Route exact path="/Contacts" element={ <Contacts /> }/>
-              <Route exact path="/uslugi" element={ <Uslugi /> }/>
-              <Route exact path="/services" element={ <Services /> }/>
-              <Route exact path="/cases" element={ <Cases /> }/>
-              <Route exact path="/team" element={ <Contacts /> }/>
-              <Route exact path="/vacancys" element={ <Contacts /> }/>
-              <Route exact path="/promotion" element={ <Contacts /> }/>
-              <Route exact path="/bitrix24" element={ <Bitrix24 /> }/>
-              <Route exact path="/1c" element={ <Contacts /> }/>
-          </Routes>
-          </div>
-          <div>
+              <Routes>
+                  <Route exact path="/" element={ <Main /> }/>
+                  <Route exact path="/Politic" element={ <Politic /> }/>
+                  <Route exact path="/Contacts" element={ <Contacts /> }/>
+                  <Route exact path="/uslugi" element={ <Uslugi /> }/>
+                  <Route exact path="/services" element={ <Services /> }/>
+                  <Route exact path="/cases" element={ <Cases /> }/>
+                  <Route exact path="/team" element={ <Contacts /> }/>
+                  <Route exact path="/vacancys" element={ <Contacts /> }/>
+                  <Route exact path="/promotion" element={ <Contacts /> }/>
+                  <Route exact path="/bitrix24" element={ <Bitrix24 /> }/>
+                  <Route exact path="/1c" element={ <Contacts /> }/>
+              </Routes>
               <Footer/>
           </div>
       </BrowserRouter>
