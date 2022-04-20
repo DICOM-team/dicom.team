@@ -3,7 +3,9 @@ import s from "../Pages/Main/Main.module.css";
 import {Link} from "react-router-dom";
 import logo from "../../img/logo.svg";
 
-const Politic = () => {
+const Politic = (props) => {
+    document.title = props.title
+    document.querySelector('meta[name="description"]').content = props.description
     return (
         <div>
             <div className="App">

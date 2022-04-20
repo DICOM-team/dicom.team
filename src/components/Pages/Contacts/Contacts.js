@@ -4,9 +4,11 @@ import Title_h2 from "../../Blocks/Title_H2/Title_h2";
 import Accent from "../../Blocks/accent/Accent";
 import Separator from "../../Blocks/Separator/Separator";
 
-const Contacts = () => {
+const Contacts = (props) => {
+    document.title = props.title
+    document.querySelector('meta[name="description"]').content = props.description
     return (
-        <div className="App">
+        <div>
             <Title_h1 name={'Наши контакты'} subname={'самый удобный способ это telegram или WhatsApp'} />
             <Separator />
             <b className={'Lage_text'}>

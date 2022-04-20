@@ -18,17 +18,17 @@ ReactDOM.render(
           <div className="App">
               <Header/>
               <Routes>
-                  <Route exact path="/" element={ <Main /> }/>
-                  <Route exact path="/Politic" element={ <Politic /> }/>
-                  <Route exact path="/Contacts" element={ <Contacts /> }/>
-                  <Route exact path="/uslugi" element={ <Uslugi /> }/>
-                  <Route exact path="/services" element={ <Services /> }/>
-                  <Route exact path="/cases" element={ <Cases /> }/>
-                  <Route exact path="/team" element={ <Contacts /> }/>
-                  <Route exact path="/vacancys" element={ <Contacts /> }/>
-                  <Route exact path="/promotion" element={ <Contacts /> }/>
-                  <Route exact path="/bitrix24" element={ <Bitrix24 /> }/>
-                  <Route exact path="/1c" element={ <Contacts /> }/>
+                  <Route exact path="/" element={ <Main title={'DICOM.TEAM'} description={'Студия DICOM - цифровизация бизнеса!'}/> }/>
+                  <Route exact path="/Politic" element={ <Politic title={'Политика конфиденциальности'} description={''}/> }/>
+                  <Route exact path="/Contacts" element={ <Contacts title={'Dicom.Контакты'} description={'Страница с контактами DICOM'} /> }/>
+                  <Route exact path="/uslugi" element={ <Uslugi title={'Dicom.Приложения'} description={'Разработка приложений, телеграм ботов и других сервисов для бизнеса'}/> }/>
+                  <Route exact path="/services" element={ <Services title={'DICOM.Cервисы'} description={'Сервисы разработанные студией DICOM'} /> }/>
+                  <Route exact path="/cases" element={ <Cases title={'Dicom.Кейсы'} description={'Порфолио студии DICOM'}/> }/>
+                  <Route exact path="/team" element={ <Contacts title={'Dicom. Контакты'} description={'Контакты студии DICOM'}/> }/>
+                  <Route exact path="/vacancys" element={ <Contacts title={'Dicom.Вакансии'} description={'Вакансии студии DICOM'}/> }/>
+                  <Route exact path="/promotion" element={ <Contacts title={'Dicom.Поддержка'} description={'Служба поддержки DICOM'}/> }/>
+                  <Route exact path="/bitrix24" element={ <Bitrix24 title={'Dicom.Битрикс24'} description={'Золотой партнер Битркис24 - компания DICOM, более 10 лет внедрений, более 20 крупных проектов.'}/> }/>
+                  <Route exact path="/1c" element={ <Contacts title={'Dicom.1C'} description={'Интеграции различных систем с 1С:Предпиятием'}/> }/>
               </Routes>
               <Footer/>
           </div>

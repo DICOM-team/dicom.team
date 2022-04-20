@@ -88,23 +88,16 @@ a {
 .CopyRight {
   margin: 40px;
   color: #494D4E;
-  font-size: 14px;
-}
-.CopyRight>a {
-  color: #494D4E;
-}
-/*Стили кнопок*/
-.button {
-  margin: 20px;
-  padding: 20px;
-  border-radius: 10px;
-  border: 0;
-  background-color: #019ec7;
-  font-size: 20px;
-  color: white;
+
+  position: revert;
 }
 
-.Lage_text {
-  font-size: calc(1rem + .6vw);
-  Color: grey;
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  width: 100%;
+  margin-left: -15%;
+}
+.carousel-indicators {
+  top: 0;
 }
