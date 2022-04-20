@@ -1,16 +1,31 @@
-import React from "react";
-import s from './PopUp.module.css';
+import React, { useState } from "react";
+import {Modal , Button } from "react-bootstrap";
 
-const Popup = props => {
+const Popup = (props) => {
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
     return (
-        <div className={s.popupBox}>
-            <div className={s.box}>
-                <span className={s.closeIcon} onClick={props.handleClose}>x</span>
-                <p>
-                    {props.content}
-                </p>
-            </div>
-        </div>
+        <>
+        <Button variant="primary" onClick={handleShow}>
+            {props.button}
+        </Button>
+
+        <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+                <Modal.Title>{props.title}</Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                {props.content}
+            </Modal.Body>
+            <Modal.Footer>
+                <Button variant="secondary" onClick={handleClose}>
+                    Закрыть
+                </Button>
+            </Modal.Footer>
+        </Modal>
+        </>
     );
 };
 
