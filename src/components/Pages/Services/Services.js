@@ -1,9 +1,12 @@
 import React from 'react';
+import Title_h1 from "../../Blocks/Title_H1/Title_h1";
 
-const Services = () => {
+const Services = (props) => {
+    document.title = props.title
+    document.querySelector('meta[name="description"]').content = props.description
     return (
-        <div className="App">
-            <h3>Сервисы</h3>
+        <div>
+            <Title_h1 name={'Сервисы'} subname={'Сервисы разработанные студией DICOM'} />
         </div>
     );
 };

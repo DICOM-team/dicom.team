@@ -1,23 +1,41 @@
 import React from 'react';
 import s from './Cases.module.css'
+import Title_h1 from "../../Blocks/Title_H1/Title_h1";
+import Carousel from "react-bootstrap/Carousel"
 
-const Cases = () => {
+const Cases = (props) => {
+    document.title = props.title
+    document.querySelector('meta[name="description"]').content = props.description
     return (
-        <div className="App">
-            <h3>Кейсы</h3>
-            <div className={s.cases}>
-                <div>
-                    <img width={'100%'} src={'https://www.dmddesign.co.uk/wp-content/uploads/2015/01/responsive-website-screen-mockup-trust.jpg'} alt=''/>
-                </div>
-                <div className={s.description}>Павел пришел к нам с задачей "Требуется сделать сайт не как у всех и продвинуть его в Яндексе" <br/>
-                    <br/>
-                    Мы предложили Павлу сделать сайта с динамическим  бекграундом. <br/>
-                    В списке задач стояла задача продвинуть сайт по 150 запросам в яндексе. <br/>
-                    Задача была выполнена за 4 месяца работы. <br/>
-                    <br/>
-                    В данный момент работы над сайтом продолжаются. Сайт актвивно принимает заявки. <br/>
-                </div>
-            </div>
+        <div>
+            <Title_h1 name={'Кейсы'} subname={''} />
+            <Carousel className={'carousel-dark'}>
+                <Carousel.Item interval={10000}>
+                    <img
+                        className="d-block w-100"
+                        src="/img/content/cases/brandcamp_case.png"
+                        alt="Image One"
+                    />
+                    <Carousel.Caption>
+                        <h3>Компания Bandcamp</h3>
+                        <p>
+                            Полная оцифровка бизнеса. технологии и сервисы (Битрикс24, 1С-Битркис управление сайтом, 1С:Предприятие "Управление торговлей") <br/>
+                            Синхронизация работы всех систем.
+                        </p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item interval={10000}>
+                    <img
+                        className="d-block w-100 block"
+                        src="/img/content/cases/Romana.png"
+                        alt="Image Two"
+                    />
+                    <Carousel.Caption>
+                        <h3>Компания ROMANA</h3>
+                        <p>Разработка, внедрение и автоматизация бизнес-процессов компании в Битрикс24</p>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
         </div>
     );
 };

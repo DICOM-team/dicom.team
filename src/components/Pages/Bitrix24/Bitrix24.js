@@ -9,10 +9,11 @@ import ImgText from "../../Blocks/ImgText/imgText";
 import TextImg from "../../Blocks/TextImg/TextImg"
 import ThreeColums from "../../Blocks/ThreeColums/ThreeColums";
 
-const Bitrix24 = () => {
-
+const Bitrix24 = (props) => {
+    document.title = props.title
+    document.querySelector('meta[name="description"]').content = props.description
     return (
-        <div className={'App'}>
+        <div>
             <Title_h1 name={'Внедряем Битрикс24'} subname={'Хорошее дело быстрым не бывает'} />
             <img src={'/img/content/Bitrix24-logo-480x360.png'} alt="Внедрение Битркис24 от DICOM" width={'50%'} />
             <Separator />
