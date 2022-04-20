@@ -8,6 +8,7 @@ import Separator from "../../Blocks/Separator/Separator";
 import ImgText from "../../Blocks/ImgText/imgText";
 import TextImg from "../../Blocks/TextImg/TextImg"
 import ThreeColums from "../../Blocks/ThreeColums/ThreeColums";
+import Popup from "../../PopUp/Popup";
 
 const Bitrix24 = (props) => {
     document.title = props.title
@@ -23,18 +24,15 @@ const Bitrix24 = (props) => {
                             Я сам подготовлю ТЗ после серии встреч в Zoom/Skype. <br/>
                             <b>Личные встречи только в Чебоксарах.</b></>}/>
 
-            <ButtonForm name={'Заказать бесплатную часовую консультацию'} content={<>
-                <h3>Бесплатная часовая консультация</h3>
-                <br/><br/>
+            <Popup button={'Заказать бесплатную часовую консультацию'} title={'Бесплатная часовая консультация'} content={<>
                 <p className={s.description}>
-                <input type="text"/>Имя <br/>
-                <br/>
-                <input type="text"/>Телефон <br/>
-                <br/>
+                    <input type="text"/>Имя <br/>
+                    <br/>
+                    <input type="text"/>Телефон <br/>
+                    <br/>
                 </p>
-                <button>Отправить</button>
-                </>}
-            />
+            </>}/>
+
             <Separator />
             <ImgText url={'/img/content/Bitirx24.png'} text={<> <p>
                 - Быстрый поиск контактов сотрудников. <br/>
