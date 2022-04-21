@@ -44,7 +44,14 @@ body {
   font-size: calc(1rem + .6vw);
   letter-spacing: 1px;
   background-attachment: fixed;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   /*color: white;*/
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 a {
   text-decoration: none;
@@ -60,6 +67,7 @@ a {
   backdrop-filter: blur(70px);
   /* Note: backdrop-filter has minimal browser support */
   /*border-radius: 44px;*/
+  /*height: 100vh;*/
   padding: 0 60px;
 }
 .App>p {
@@ -88,7 +96,7 @@ a {
 .CopyRight {
   margin: 40px;
   color: #494D4E;
-
+  font-size: 10px;
   position: revert;
 }
 
@@ -97,9 +105,15 @@ a {
   border-radius: 15px;
   width: 100%;
   margin-left: -15%;
+  position: relative;
+  bottom: 0;
 }
 .carousel-indicators {
-  top: 0;
+  top: -15px;
+}
+.carousel-control-next, .carousel-control-prev {
+  top: -20px;
+  bottom: 100%;
 }
 
 .btn-primary {

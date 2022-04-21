@@ -1,5 +1,4 @@
 import React from 'react';
-import s from './Cases.module.css'
 import Title_h1 from "../../Blocks/Title_H1/Title_h1";
 import Carousel from "react-bootstrap/Carousel"
 
@@ -17,7 +16,7 @@ const Cases = (props) => {
                         alt="Image One"
                     />
                     <Carousel.Caption>
-                        <h3>Компания Bandcamp</h3>
+                        <h3>Компания Brandcamp</h3>
                         <p>
                             Полная оцифровка бизнеса. технологии и сервисы (Битрикс24, 1С-Битркис управление сайтом, 1С:Предприятие "Управление торговлей") <br/>
                             Синхронизация работы всех систем.
