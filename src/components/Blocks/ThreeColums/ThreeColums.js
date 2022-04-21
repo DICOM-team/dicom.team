@@ -5,19 +5,19 @@ const ThreeColums = (props) => {
 
     return (
         <div className={s.body}>
-            <div className={s.item100}>
+            <div className={'col-12 col-md-6 col-lg-4 p-3'}>
                 <Title_h3 name={props.TextColum1} />
                 <p>
                     {props.Text1}
                 </p>
             </div>
-            <div className={s.item100}>
+            <div className={'col-12 col-md-6 col-lg-4 p-3'}>
                 <Title_h3 name={props.TextColum2} />
                 <p>
                     {props.Text2}
                 </p>
             </div>
-            <div className={s.item100}>
+            <div className={'col-12 col-md-6 col-lg-4 p-3'}>
                 <Title_h3 name={props.TextColum3} />
                 <p>
                     {props.Text3}

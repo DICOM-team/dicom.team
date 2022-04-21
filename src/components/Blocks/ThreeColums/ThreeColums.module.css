@@ -1,15 +1,5 @@
-.item100 {
-    width: 33%;
-    padding: 0 20px;
-}
 .body {
     display: flex;
     flex-wrap: wrap;
     /*align-items: top;*/
-}
-@media (max-width: 800px) {
-    .item100 {
-        width: 100%;
-        padding: 15px;
-    }
 }
