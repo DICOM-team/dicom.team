@@ -7,6 +7,7 @@ const Politic = (props) => {
     return (
         <>
             <Title_h1 name={'Политика конфиденциальности'} subname={''} />
+        </>
     );
 };
 
