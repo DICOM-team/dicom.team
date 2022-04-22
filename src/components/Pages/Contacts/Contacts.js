@@ -9,13 +9,13 @@ const Contacts = (props) => {
     document.querySelector('meta[name="description"]').content = props.description
     return (
         <>
+            <Title_h1 name={'Наши контакты'} subname={'самый удобный способ Telegram'}/>
             <div className="container">
-                <div className="row">
+                <div className="row flex-center">
                     <div className="col-12 col-md-6">
                         <img src="/img/contactspng.png" width={'100%'} alt=""/>
                     </div>
                     <div className="col-12 col-md-6">
-                        <Title_h1 name={'Наши контакты'} subname={'самый удобный способ Telegram'}/>
                         <b className={'Lage_text'}>
                             Наш телефон: +7 960 311 21 05 <br/>
                             WhatsApp и Telegram <br/>
