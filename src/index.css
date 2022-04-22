@@ -6,6 +6,7 @@ h1 {
   /*padding: 50px 0 50px 0;*/
   font-size: calc(3.3rem + .6vw);
   text-transform: uppercase;
+  font-weight: 300;
 }
 h1>p {
   font-size: calc(0.8rem + .3vw);
