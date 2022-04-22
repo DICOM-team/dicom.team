@@ -7,6 +7,7 @@ const Services = (props) => {
     return (
         <div>
             <Title_h1 name={'Сервисы'} subname={'Сервисы разработанные студией DICOM'} />
+            <img src="/img/crm.png" width={'100%'} alt="CRM ситема от компании DICOM"/>
         </div>
     );
 };

@@ -8,6 +8,7 @@ export let mainMenu = {
         {name: 'Support', urm: '/promotion', img: '/img/dicomHelp.png'},
         {name: 'Битрикс24', urm: '/bitrix24', img: '/img/dicomB24.png'},
         {name: '1C', urm: '/1c', img: '/img/dicom1c.png'},
-        {name: 'Вакансии', urm: '/vacancys', img: '/img/dicomVakan.png'}
+        {name: 'Вакансии', urm: '/vacancys', img: '/img/dicomVakan.png'},
+        {name: 'Telegram', urm: '/telegram-bot', img: '/img/dicomYslugi.png'}
     ]
 }
