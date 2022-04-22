@@ -7,6 +7,7 @@ const TelegramBot = (props) => {
     return (
         <>
             <Title_h1 name={'Разработка приложений (ботов) для Telegram'} subname={'любой сложности'} />
+            <img src="/img/bot-telegram.png" width={'100%'} alt="DICOM разработка ботов любой сложности"/>
         </>
     );
 }

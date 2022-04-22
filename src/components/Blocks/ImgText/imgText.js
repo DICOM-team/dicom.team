@@ -10,7 +10,7 @@ const ImgText = (props) => {
             </div>
             <div className={s.item}>
                 <div className={s.description}>
-                    <Title_h2 name={props.Title} subname={''} />
+                    <Title_h2 name={props.title} subname={props.subname} />
                     {props.text}
                 </div>
             </div>
