@@ -2,7 +2,6 @@
     margin: 20px 0;
 }
 .logo img {
-    width: 30%;
     padding-top: 5vh;
     padding-bottom: 5vh;
 }
@@ -11,16 +10,12 @@
         margin: 10px;
     }
     .logo img {
-        width: 50%;
+        width: 80%;
         padding-top: 5vh;
         padding-bottom: 5vh;
     }
 }
 .CardsButtons {
-    /* display: flex; */
     justify-content: left;
     flex-wrap: wrap;
-}
-.card {
-    /*max-width: 200px;*/
 }
