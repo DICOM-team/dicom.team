@@ -1,46 +1,41 @@
 .body {
-    /*border: 1px solid rgba(32, 4, 59, 0.67);*/
     width: 8vw;
     height: 8vw;
-    /*border-radius: 10px;*/
     margin: auto;
-    /*box-shadow: 0 5px 38px 0 rgba(0, 0, 0, 0.2);*/
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    /*background-color: rgba(255, 255, 255, 0.03);*/
-}
-@media (max-width: 760px) {
-    .body {
-        width: 15vw;
-        height: 15vw;
-        /* margin: 15px 15px 10px 15px; */
-    }
-    .name {
-        font-size: 4vw!important;
-    }
-}
-@media (min-width: 1024px) {
-    .body {
-        width: 4vw;
-        height: 4vw;
-        /* margin: 15px 15px 10px 15px; */
-    }
 }
 .cardHover:hover {
     transform: scale(1.1);
-    /* width: 110px;
-    height: 110px; */
-    /* margin: 15px 15px 5px 15px; */
-    /* transition: ALL 0.4s linear; */
 }
 .cardHover{
     transition: .3s;
 }
 .name {
-    /*color: #494D4E;*/
     color: black;
     font-size: calc(.5em + .4vw);
     padding-bottom: 10px;
     padding-top: 30px;
+}
+@media (max-width: 720px) {
+    .body {
+        width: 12vw;
+        height: 12vw;
+    }
+}
+@media (min-width: 960px) {
+    .body {
+        width: 8vw;
+        height: 8vw;
+    }
+    .name {
+        /*font-size: 4vw!important;*/
+    }
+}
+@media (min-width: 1200px) {
+    .body {
+        width: 4vw;
+        height: 4vw;
+    }
 }
