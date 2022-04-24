@@ -9,6 +9,7 @@ const Contacts = (props) => {
     document.querySelector('meta[name="description"]').content = props.description
     return (
         <>
+            <hr/>
             <Title_h1 name={'Наши контакты'} subname={'самый удобный способ Telegram'}/>
             <div className="container">
                 <div className="row flex-center">

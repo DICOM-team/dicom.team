@@ -6,6 +6,7 @@ const TelegramBot = (props) => {
     document.querySelector('meta[name="description"]').content = props.description
     return (
         <>
+            <hr/>
             <Title_h1 name={'Разработка приложений (ботов) для Telegram'} subname={'любой сложности'} />
             <img src="/img/bot-telegram.png" width={'100%'} alt="DICOM разработка ботов любой сложности"/>
         </>

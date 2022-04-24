@@ -9,6 +9,7 @@ const Uslugi = (props) => {
     document.querySelector('meta[name="description"]').content = props.description
     return (
         <div>
+            <hr/>
             <Title_h1 name={'Разработаем мобильное приложение'} subname={'с пожизненной гарантией'} />
             <p>
                 в 2 раза быстрее, от 200 000 руб. <br/>

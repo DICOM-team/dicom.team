@@ -16,6 +16,7 @@ const Bitrix24 = (props) => {
     document.querySelector('meta[name="description"]').content = props.description
     return (
         <div>
+            <hr/>
             <Title_h1 name={'Внедряем Битрикс24'} subname={'Хорошее дело быстрым не бывает'} />
             <img src={'/img/content/Bitrix24-logo-480x360.png'} alt="Внедрение Битркис24 от DICOM" width={'50%'} />
             {/*<Separator />*/}
