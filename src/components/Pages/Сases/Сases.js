@@ -7,6 +7,7 @@ const Cases = (props) => {
     document.querySelector('meta[name="description"]').content = props.description
     return (
         <div>
+            <hr/>
             <Title_h1 name={'Кейсы'} subname={''} />
             <Carousel className={'carousel-dark'}>
                 <Carousel.Item interval={10000}>
