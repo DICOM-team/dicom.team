@@ -10,6 +10,7 @@ import TextImg from "../../Blocks/TextImg/TextImg"
 import ThreeColums from "../../Blocks/ThreeColums/ThreeColums";
 import Popup from "../../PopUp/Popup";
 import WhiteBlock from "../../Blocks/WhiteBlock/WhiteBlock";
+import MyForm from "../../Form/Form";
 
 const Bitrix24 = (props) => {
     document.title = props.title
@@ -30,10 +31,7 @@ const Bitrix24 = (props) => {
 
                 <Popup button={'Заказать бесплатную часовую консультацию'} title={'Бесплатная часовая консультация'} content={<>
                 <p className={s.description}>
-                <input type="text"/>Имя <br/>
-                <br/>
-                <input type="text"/>Телефон <br/>
-                <br/>
+                    <MyForm />
                 </p>
                 </>}/>
             </>
