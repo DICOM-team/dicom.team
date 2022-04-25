@@ -12,3 +12,6 @@ export let mainMenu = {
         {name: 'Telegram', urm: '/telegram-bot', img: '/img/dicomYslugi.png'}
     ]
 }
+export let Form = {
+    send: false
+}

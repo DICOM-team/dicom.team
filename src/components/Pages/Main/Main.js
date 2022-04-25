@@ -13,7 +13,7 @@ const Main = (props) => {
     })
 
     return (
-        <div>
+        <div className={s.mobileMainBody}>
             <div className={s.CardsButtons + ' row'}>
                 {Cardbuttons}
             </div>

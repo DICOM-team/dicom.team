@@ -18,6 +18,7 @@ ReactDOM.render(
       <BrowserRouter >
           <div className="App">
               <Header/>
+              <div className={'main'}>
               <Routes>
                   <Route exact path="/" element={ <Main title={'DICOM.TEAM'} description={'Студия DICOM - цифровизация бизнеса!'}/> }/>
                   <Route exact path="/Politic" element={ <Politic title={'Политика конфиденциальности'} description={''}/> }/>
@@ -32,6 +33,7 @@ ReactDOM.render(
                   <Route exact path="/1c" element={ <Contacts title={'Dicom.1C'} description={'Интеграции различных систем с 1С:Предпиятием'}/> }/>
                   <Route exact path="/telegram-bot" element={ < TelegramBot title={'Dicom.Telegram'} description={'Разработка ботов для telegram любой сложности от 5000 руб.'}/> }/>
               </Routes>
+              </div>
               <Footer/>
           </div>
       </BrowserRouter>
