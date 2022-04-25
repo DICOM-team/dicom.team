@@ -6,11 +6,13 @@ import Input from '../Input';
 import TextArea from '../TextArea';
 import Select from '../Select';
 import Button from '../Buttons'
+import {Form} from '../../State/State'
 
 class FormContainer extends Component {
     constructor(props) {
         super(props);
-
+        let send_now = (Form.send) ? true : false
+        console.log(send_now)
         this.state = {
             newLead: {
                 name: '',
@@ -18,13 +20,14 @@ class FormContainer extends Component {
                 // gender: '',
                 skills: [],
                 about: '',
-                send: false
+                send: send_now
             },
 
             // genderOptions: ['Male', 'Female', 'Others'],
             skillOptions: ['Битрикс24', 'Мобильное приложение', 'Telegram bot']
 
         }
+
         this.handleTextArea = this.handleTextArea.bind(this);
         this.handlePhone = this.handlePhone.bind(this);
         // this.handleFullName = this.handleFullName.bind(this);
@@ -32,6 +35,7 @@ class FormContainer extends Component {
         this.handleClearForm = this.handleClearForm.bind(this);
         this.handleCheckBox = this.handleCheckBox.bind(this);
         this.handleInput = this.handleInput.bind(this);
+        console.log(this.state.newLead.send)
     }
 
     /* This lifecycle hook gets executed when the component mounts */
@@ -115,6 +119,7 @@ class FormContainer extends Component {
             },
         }).then(response => {
             response.json().then(data =>{
+                Form.send = true
                 this.state.send = true
                 this.setState( prevState => ({ newLead :
                         {...prevState.newLead, send: true
@@ -140,8 +145,8 @@ class FormContainer extends Component {
     }
 
     render() {
-        // console.log(this.state.send)
-        if (!this.state.send) {
+        console.log(this.state.newLead.send)
+        if (!this.state.newLead.send) {
             return (
                 <form className="container-fluid" onSubmit={this.handleFormSubmit}>
 
