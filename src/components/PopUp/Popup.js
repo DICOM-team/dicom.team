@@ -19,11 +19,6 @@ const Popup = (props) => {
             <Modal.Body>
                 {props.content}
             </Modal.Body>
-            <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
-                    Закрыть
-                </Button>
-            </Modal.Footer>
         </Modal>
         </>
     );
