@@ -3,6 +3,8 @@ import CardButton from "../../CardButton/CardButton";
 import {Link} from "react-router-dom";
 import {mainMenu} from "../../../State/State";
 import s from './Main.module.css';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
 const Main = (props) => {
     document.title = props.title
     document.querySelector('meta[name="description"]').content = props.description
@@ -14,9 +16,16 @@ const Main = (props) => {
 
     return (
         <div className={s.mobileMainBody}>
+            <ReactCSSTransitionGroup
+                transitionName="anim"
+                transitionAppear={true}
+                transitionAppearTimeout={1000}
+                transitionEnter={false}
+                transitionLeave={false}>
             <div className={s.CardsButtons + ' row'}>
                 {Cardbuttons}
             </div>
+            </ReactCSSTransitionGroup>
         </div>
     );
 };

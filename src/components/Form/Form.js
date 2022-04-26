@@ -99,9 +99,10 @@ class FormContainer extends Component {
         let DataLead =  {
             fields:
                 {
-                    "TITLE": this.state.newLead.name,
+                    "TITLE": "Заказ с сайта от " + this.state.newLead.name,
                     "NAME": this.state.newLead.name,
                     "STATUS_ID": "NEW",
+                    "SOURCE_ID": "WEB",
                     "OPENED": "Y",
                     "ASSIGNED_BY_ID": 1,
                     "PHONE": [ { "VALUE": this.state.newLead.phone, "VALUE_TYPE": "WORK" } ],
