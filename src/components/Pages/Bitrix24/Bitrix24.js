@@ -11,12 +11,19 @@ import ThreeColums from "../../Blocks/ThreeColums/ThreeColums";
 import Popup from "../../PopUp/Popup";
 import WhiteBlock from "../../Blocks/WhiteBlock/WhiteBlock";
 import MyForm from "../../Form/Form";
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 const Bitrix24 = (props) => {
     document.title = props.title
     document.querySelector('meta[name="description"]').content = props.description
     return (
         <div>
+            <ReactCSSTransitionGroup
+                transitionName="anim"
+                transitionAppear={true}
+                transitionAppearTimeout={1000}
+                transitionEnter={false}
+                transitionLeave={false}>
             <hr/>
             <Title_h1 name={'Внедряем Битрикс24'} subname={'Хорошее дело быстрым не бывает'} />
             <img src={'/img/content/Bitrix24-logo-480x360.png'} alt="Внедрение Битркис24 от DICOM" width={'50%'} />
@@ -88,6 +95,7 @@ const Bitrix24 = (props) => {
                 <button>Отправить</button>
             </>}
             />
+            </ReactCSSTransitionGroup>
         </div>
     );
 };

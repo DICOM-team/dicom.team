@@ -3,12 +3,19 @@ import Title_h1 from "../../Blocks/Title_H1/Title_h1";
 import Title_h2 from "../../Blocks/Title_H2/Title_h2";
 import Accent from "../../Blocks/accent/Accent";
 import Separator from "../../Blocks/Separator/Separator";
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 const Contacts = (props) => {
     document.title = props.title
     document.querySelector('meta[name="description"]').content = props.description
     return (
         <>
+            <ReactCSSTransitionGroup
+                transitionName="anim"
+                transitionAppear={true}
+                transitionAppearTimeout={1000}
+                transitionEnter={false}
+                transitionLeave={false}>
             <hr/>
             <Title_h1 name={'Наши контакты'} subname={'самый удобный способ Telegram'}/>
             <div className="container">
@@ -29,7 +36,7 @@ const Contacts = (props) => {
             <Separator />
             <Title_h2 name={'Наш офис'} subname={'Чебоксары, пр. Ленина 12Б'} />
             <Accent context={'Коворкинг центр имеет пропускную систему, поэтому предварительно позвоните мне или любым другим способом сообщите о предстоящей встрече.'}/>
-
+            </ReactCSSTransitionGroup>
         </>
     );
 };

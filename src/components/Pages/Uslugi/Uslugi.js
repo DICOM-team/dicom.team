@@ -3,12 +3,19 @@ import './Uslugi.css';
 import Title_h1 from "../../Blocks/Title_H1/Title_h1";
 import ButtonForm from "../../Blocks/ButtonForm/ButtonForm";
 import s from "../Bitrix24/Bitrix24.module.css";
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 const Uslugi = (props) => {
     document.title = props.title
     document.querySelector('meta[name="description"]').content = props.description
     return (
         <div>
+            <ReactCSSTransitionGroup
+                transitionName="anim"
+                transitionAppear={true}
+                transitionAppearTimeout={1000}
+                transitionEnter={false}
+                transitionLeave={false}>
             <hr/>
             <Title_h1 name={'Разработаем мобильное приложение'} subname={'с пожизненной гарантией'} />
             <p>
@@ -28,6 +35,7 @@ const Uslugi = (props) => {
                 <button>Отправить</button>
             </>}
             />
+            </ReactCSSTransitionGroup>
         </div>
     );
 };

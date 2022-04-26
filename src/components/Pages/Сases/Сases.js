@@ -1,12 +1,19 @@
 import React from 'react';
 import Title_h1 from "../../Blocks/Title_H1/Title_h1";
 import Carousel from "react-bootstrap/Carousel"
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 const Cases = (props) => {
     document.title = props.title
     document.querySelector('meta[name="description"]').content = props.description
     return (
         <div>
+            <ReactCSSTransitionGroup
+                transitionName="anim"
+                transitionAppear={true}
+                transitionAppearTimeout={1000}
+                transitionEnter={false}
+                transitionLeave={false}>
             <hr/>
             <Title_h1 name={'Кейсы'} subname={''} />
             <Carousel className={'carousel-dark'}>
@@ -36,6 +43,7 @@ const Cases = (props) => {
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
+            </ReactCSSTransitionGroup>
         </div>
     );
 };
