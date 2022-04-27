@@ -4,6 +4,8 @@ import Titleh1 from "../../Blocks/Title_H1/Titleh1";
 import ButtonForm from "../../Blocks/ButtonForm/ButtonForm";
 import s from "../Bitrix24/Bitrix24.module.css";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import MyForm from "../../Form/Form";
+import Popup from "../../PopUp/Popup";
 
 const Uslugi = (props) => {
     document.title = props.title
@@ -23,18 +25,11 @@ const Uslugi = (props) => {
                 За счет использования современных <br/>
                 кросс-платформенных решений Flutter
             </p>
-            <ButtonForm name={'Заказать бесплатную часовую консультацию'} content={<>
-                <h3>Бесплатная часовая консультация</h3>
-                <br/><br/>
-                <p className={s.description}>
-                    <input type="text"/>Имя <br/>
-                    <br/>
-                    <input type="text"/>Телефон <br/>
-                    <br/>
-                </p>
-                <button>Отправить</button>
-            </>}
-            />
+                <Popup button={'Заказать приложение'} title={'Заказать приложение'} content={<>
+                    <p className={s.description}>
+                        <MyForm />
+                    </p>
+                </>}/>
             </ReactCSSTransitionGroup>
         </div>
     );

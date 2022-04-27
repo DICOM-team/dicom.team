@@ -83,18 +83,11 @@ const Bitrix24 = (props) => {
             <div className={s.block}>
                 <a className={'link'} href="https://www.bitrix24.ru/?p=14113838">Подробнее с Битрикс24 можно ознакомиться на официальном сайте</a>
             </div>
-            <ButtonForm name={'Заказать бесплатную часовую консультацию'} content={<>
-                <h3>Бесплатная часовая консультация</h3>
-                <br/><br/>
-                <p className={s.description}>
-                    <input type="text"/>Имя <br/>
-                    <br/>
-                    <input type="text"/>Телефон <br/>
-                    <br/>
-                </p>
-                <button>Отправить</button>
-            </>}
-            />
+                <Popup button={'Заказать бесплатную часовую консультацию'} title={'Бесплатная часовая консультация'} content={<>
+                    <p className={s.description}>
+                        <MyForm />
+                    </p>
+                </>}/>
             </ReactCSSTransitionGroup>
         </div>
     );
