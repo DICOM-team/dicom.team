@@ -8,6 +8,7 @@ import Contacts from "./components/Pages/Contacts/Contacts";
 import Uslugi from "./components/Pages/Uslugi/Uslugi";
 import Services from "./components/Pages/Services/Services";
 import Cases from "./components/Pages/Сases/Сases";
+import Vacancy from './components/Pages/vacancy/Vacancy'
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Bitrix24 from "./components/Pages/Bitrix24/Bitrix24";
@@ -27,7 +28,7 @@ ReactDOM.render(
                   <Route exact path="/services" element={ <Services title={'DICOM.Cервисы'} description={'Сервисы разработанные студией DICOM'} /> }/>
                   <Route exact path="/cases" element={ <Cases title={'Dicom.Кейсы'} description={'Порфолио студии DICOM'}/> }/>
                   <Route exact path="/team" element={ <Contacts title={'Dicom. Контакты'} description={'Контакты студии DICOM'}/> }/>
-                  <Route exact path="/vacancys" element={ <Contacts title={'Dicom.Вакансии'} description={'Вакансии студии DICOM'}/> }/>
+                  <Route exact path="/vacancys" element={ <Vacancy title={'Dicom.Вакансии'} description={'Вакансии студии DICOM'}/> }/>
                   <Route exact path="/promotion" element={ <Contacts title={'Dicom.Поддержка'} description={'Служба поддержки DICOM'}/> }/>
                   <Route exact path="/bitrix24" element={ <Bitrix24 title={'Dicom.Битрикс24'} description={'Золотой партнер Битркис24 - компания DICOM, более 10 лет внедрений, более 20 крупных проектов.'}/> }/>
                   <Route exact path="/1c" element={ <Contacts title={'Dicom.1C'} description={'Интеграции различных систем с 1С:Предпиятием'}/> }/>

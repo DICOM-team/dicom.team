@@ -1,8 +1,8 @@
 import React from 'react';
 import s from './Bitrix24.module.css';
 import ButtonForm from '../../Blocks/ButtonForm/ButtonForm';
-import Title_h1 from "../../Blocks/Title_H1/Title_h1";
-import Title_h2 from "../../Blocks/Title_H2/Title_h2";
+import Titleh1 from "../../Blocks/Title_H1/Titleh1";
+import Titleh2 from "../../Blocks/Title_H2/Titleh2";
 import Accent from "../../Blocks/accent/Accent";
 import Separator from "../../Blocks/Separator/Separator";
 import ImgText from "../../Blocks/ImgText/imgText";
@@ -24,13 +24,13 @@ const Bitrix24 = (props) => {
                 transitionAppearTimeout={1000}
                 transitionEnter={false}
                 transitionLeave={false}>
-            <hr/>
-            <Title_h1 name={'Внедряем Битрикс24'} subname={'Хорошее дело быстрым не бывает'} />
-            <img src={'/img/content/Bitrix24-logo-480x360.png'} alt="Внедрение Битркис24 от DICOM" width={'50%'} />
+            {/*<hr/>*/}
+            <Titleh1 name={'Внедряем Битрикс24'} subname={'Хорошее дело быстрым не бывает'} />
+            <img src={'/images/content/Bitrix24-logo-480x360.png'} alt="Внедрение Битркис24 от DICOM" width={'50%'} />
             {/*<Separator />*/}
             <WhiteBlock content={<>
-                <Title_h2 name={'Через 2 недели уже начнете работать в Битрикс24'}
-                          subname={'Внедрение всего функционала Битрикс24 может составлять от 1 месяца до года.'}/>
+                <Titleh2 name={'Через 2 недели уже начнете работать в Битрикс24'}
+                         subname={'Внедрение всего функционала Битрикс24 может составлять от 1 месяца до года.'}/>
 
                 <Accent context={<>За 10 лет более 20+ крупных проектов <br/>
                 Я сам подготовлю ТЗ после серии встреч в Zoom/Skype. <br/>
@@ -46,7 +46,7 @@ const Bitrix24 = (props) => {
 
             <Separator />
 
-            <ImgText url={'/img/content/Bitirx24.png'} text={<> <p>
+            <ImgText url={'/images/content/Bitirx24.png'} text={<> <p>
                 - Быстрый поиск контактов сотрудников. <br/>
                 - Управление документами.<br/>
                 - Управление задачами и проектами.<br/>
@@ -62,13 +62,13 @@ const Bitrix24 = (props) => {
             <Separator />
 
             <WhiteBlock content={
-                <TextImg url={'/img/content/kp_1x.png'} text={<> <p>
+                <TextImg url={'/images/content/kp_1x.png'} text={<> <p>
                     Оформленная подписка Битрикс24.Маркет Плюс позволит использовать более 1 500 полезных приложений,
                     представленных в каталоге.
                 </p></>} Title={'Битрикс24.Маркет Плюс'}/>
             } />
             <Separator />
-            <Title_h2 name={'Как мы работаем'} subname={'этапы проекта'} />
+            <Titleh2 name={'Как мы работаем'} subname={'этапы проекта'} />
             <Separator />
             <WhiteBlock content={
                 <ThreeColums TextColum1={'Аудит'}

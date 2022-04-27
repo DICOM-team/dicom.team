@@ -1,6 +1,6 @@
 import React from 'react';
 import './Uslugi.css';
-import Title_h1 from "../../Blocks/Title_H1/Title_h1";
+import Titleh1 from "../../Blocks/Title_H1/Titleh1";
 import ButtonForm from "../../Blocks/ButtonForm/ButtonForm";
 import s from "../Bitrix24/Bitrix24.module.css";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
@@ -16,8 +16,8 @@ const Uslugi = (props) => {
                 transitionAppearTimeout={1000}
                 transitionEnter={false}
                 transitionLeave={false}>
-            <hr/>
-            <Title_h1 name={'Разработаем мобильное приложение'} subname={'с пожизненной гарантией'} />
+            {/*<hr/>*/}
+            <Titleh1 name={'Разработаем мобильное приложение'} subname={'с пожизненной гарантией'} />
             <p>
                 в 2 раза быстрее, от 200 000 руб. <br/>
                 За счет использования современных <br/>
