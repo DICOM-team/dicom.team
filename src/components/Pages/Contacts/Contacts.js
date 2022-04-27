@@ -18,6 +18,7 @@ const Contacts = (props) => {
                 transitionLeave={false}>
             {/*<hr/>*/}
             <Titleh1 name={'Наши контакты'} subname={'самый удобный способ Telegram'}/>
+                <Separator />
             <div className="container">
                 <div className="row flex-center">
                     <div className="col-12 col-md-6">
@@ -26,7 +27,7 @@ const Contacts = (props) => {
                     <div className="col-12 col-md-6">
                         <b className={'Lage_text'}>
                             Наш телефон: +7 960 311 21 05 <br/>
-                            WhatsApp и Telegram <br/>
+                            WhatsApp и <a href={'https://t.me/dicom_team'}>Telegram</a> <br/>
                             e-mail: bavalex24@yandex.ru
                         </b>
                     </div>

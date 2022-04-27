@@ -13,6 +13,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Bitrix24 from "./components/Pages/Bitrix24/Bitrix24";
 import TelegramBot from "./components/Pages/TelegramBot/TelegramBot";
+import Team from "./components/Pages/Team/Team";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -27,7 +28,7 @@ ReactDOM.render(
                   <Route exact path="/uslugi" element={ <Uslugi title={'Dicom.Приложения'} description={'Разработка приложений, телеграм ботов и других сервисов для бизнеса'}/> }/>
                   <Route exact path="/services" element={ <Services title={'DICOM.Cервисы'} description={'Сервисы разработанные студией DICOM'} /> }/>
                   <Route exact path="/cases" element={ <Cases title={'Dicom.Кейсы'} description={'Порфолио студии DICOM'}/> }/>
-                  <Route exact path="/team" element={ <Contacts title={'Dicom. Контакты'} description={'Контакты студии DICOM'}/> }/>
+                  <Route exact path="/team" element={ <Team title={'Dicom.Команда'} description={'Команда студии DICOM'}/> }/>
                   <Route exact path="/vacancys" element={ <Vacancy title={'Dicom.Вакансии'} description={'Вакансии студии DICOM'}/> }/>
                   <Route exact path="/promotion" element={ <Contacts title={'Dicom.Поддержка'} description={'Служба поддержки DICOM'}/> }/>
                   <Route exact path="/bitrix24" element={ <Bitrix24 title={'Dicom.Битрикс24'} description={'Золотой партнер Битркис24 - компания DICOM, более 10 лет внедрений, более 20 крупных проектов.'}/> }/>
