@@ -14,6 +14,7 @@ import Footer from "./components/Footer";
 import Bitrix24 from "./components/Pages/Bitrix24/Bitrix24";
 import TelegramBot from "./components/Pages/TelegramBot/TelegramBot";
 import Team from "./components/Pages/Team/Team";
+import { YMInitializer } from 'react-yandex-metrika';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -37,6 +38,7 @@ ReactDOM.render(
               </Routes>
               </div>
               <Footer/>
+              <YMInitializer accounts={[88635494]} options={{webvisor: true}} />
           </div>
       </BrowserRouter>
   </React.StrictMode>,
