@@ -1,5 +1,5 @@
 import React from 'react';
-import Title_h1 from "../../Blocks/Title_H1/Title_h1";
+import Titleh1 from "../../Blocks/Title_H1/Titleh1";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 const Services = (props) => {
@@ -13,9 +13,9 @@ const Services = (props) => {
                 transitionAppearTimeout={1000}
                 transitionEnter={false}
                 transitionLeave={false}>
-            <hr/>
-            <Title_h1 name={'Сервисы'} subname={'Сервисы разработанные студией DICOM'} />
-            <img src="/img/crm.png" width={'100%'} alt="CRM ситема от компании DICOM"/>
+            {/*<hr/>*/}
+            <Titleh1 name={'Сервисы'} subname={'Сервисы разработанные студией DICOM'} />
+            <img src="/images/crm.png" width={'100%'} alt="CRM ситема от компании DICOM"/>
             </ReactCSSTransitionGroup>
         </div>
     );

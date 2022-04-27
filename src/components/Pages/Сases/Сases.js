@@ -1,5 +1,5 @@
 import React from 'react';
-import Title_h1 from "../../Blocks/Title_H1/Title_h1";
+import Titleh1 from "../../Blocks/Title_H1/Titleh1";
 import Carousel from "react-bootstrap/Carousel"
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
@@ -14,13 +14,13 @@ const Cases = (props) => {
                 transitionAppearTimeout={1000}
                 transitionEnter={false}
                 transitionLeave={false}>
-            <hr/>
-            <Title_h1 name={'Кейсы'} subname={''} />
+            {/*<hr/>*/}
+            <Titleh1 name={'Кейсы'} subname={''} />
             <Carousel className={'carousel-dark'}>
                 <Carousel.Item interval={10000}>
                     <img
                         className="d-block w-100"
-                        src="/img/content/cases/brandcamp_case.png"
+                        src="/images/content/cases/brandcamp_case.png"
                         alt="Image One"
                     />
                     <Carousel.Caption>
@@ -34,7 +34,7 @@ const Cases = (props) => {
                 <Carousel.Item interval={10000}>
                     <img
                         className="d-block w-100 block"
-                        src="/img/content/cases/Romana.png"
+                        src="/images/content/cases/Romana.png"
                         alt="Image Two"
                     />
                     <Carousel.Caption>

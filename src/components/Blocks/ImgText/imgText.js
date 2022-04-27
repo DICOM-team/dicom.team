@@ -1,5 +1,5 @@
 import s from './ImgText.module.css';
-import Title_h2 from "../Title_H2/Title_h2";
+import Titleh2 from "../Title_H2/Titleh2";
 
 const ImgText = (props) => {
 
@@ -10,7 +10,7 @@ const ImgText = (props) => {
             </div>
             <div className={s.item}>
                 <div className={s.description}>
-                    <Title_h2 name={props.title} subname={props.subname} />
+                    <Titleh2 name={props.title} subname={props.subname} />
                     {props.text}
                 </div>
             </div>

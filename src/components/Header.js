@@ -15,7 +15,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className={'col-3 col-xs-2 col-md-3 flex-center'}>
-                    <Link to={'/'}><img src="/img/home.png" width={'30px'}/></Link>
+                    <Link to={'/'}><img src="/images/home.png" width={'30px'} alt={''}/></Link>
                 </div>
             </div>
             {/*<Separator />*/}
