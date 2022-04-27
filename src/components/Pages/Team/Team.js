@@ -1,5 +1,8 @@
 import React from "react";
 import ThreeColums from "../../Blocks/ThreeColums/ThreeColums";
+import ym from 'react-yandex-metrika';
+ym('hit', '/team');
+// ym('reachGoal', 'team');
 
 const Team = (props) => {
     return (
