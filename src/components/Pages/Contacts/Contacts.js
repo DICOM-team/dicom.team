@@ -21,7 +21,7 @@ const Contacts = (props) => {
             <Tabs defaultActiveKey="Контакты" id="uncontrolled-tab" className="mb-3">
                 <Tab eventKey="Контакты" title="Контакты">
                     <Titleh1 name={'Наши контакты'} subname={'самый удобный способ Telegram'}/>
-                    <Separator />
+                    {/*<Separator />*/}
                     <div className="container">
                         <div className="row flex-center">
                             <div className="col-12 col-md-6">

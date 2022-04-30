@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './Bitrix24.module.css';
-import ButtonForm from '../../Blocks/ButtonForm/ButtonForm';
 import Titleh1 from "../../Blocks/Title_H1/Titleh1";
 import Titleh2 from "../../Blocks/Title_H2/Titleh2";
 import Accent from "../../Blocks/accent/Accent";
