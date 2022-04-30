@@ -42,7 +42,7 @@ h3 {
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
   position: fixed;
-  z-index: 99999;
+  z-index: 1000;
   top: 0;
   left: 0;
   width: 100%;
