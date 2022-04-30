@@ -47,7 +47,7 @@ h3 {
   left: 0;
   width: 100%;
   /*background-color: #ccf3fec9;*/
-  background: linear-gradient(to bottom, #ccf3fe, rgba(0, 0, 0, 0));
+  /*background: linear-gradient(to bottom, #ccf3fe, rgba(0, 0, 0, 0));*/
   backdrop-filter: blur(7px);
   /*background-image: url("/images/fon2.jpg");*/
 }
