@@ -42,7 +42,7 @@ h3 {
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
   position: fixed;
-  z-index: 99999;
+  z-index: 1000;
   top: 0;
   left: 0;
   width: 100%;
@@ -171,7 +171,7 @@ a {
   background-color: white;
   margin-left: -30px;
   margin-right: -30px;
-  background: linear-gradient(to right, #4c7ac200, #FFFFFF, #4c7ac200);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #fff, rgba(255, 255, 255, 0));
 }
 .nav-tabs .nav-link.active {
   color: #4c7ac2;
