@@ -10,6 +10,7 @@ import Titleh3 from "../../Blocks/Title_H3/Titleh3";
 const Vacancy = (props) => {
     document.title = props.title
     document.querySelector('meta[name="description"]').content = props.description
+    document.documentElement.scrollIntoView(true);
     return (
             <>
                 <ReactCSSTransitionGroup

@@ -15,6 +15,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 const Bitrix24 = (props) => {
     document.title = props.title
     document.querySelector('meta[name="description"]').content = props.description
+    document.documentElement.scrollIntoView(true);
     return (
         <div>
             <ReactCSSTransitionGroup

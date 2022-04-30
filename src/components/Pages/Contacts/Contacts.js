@@ -2,13 +2,12 @@ import React from 'react';
 import Titleh1 from "../../Blocks/Title_H1/Titleh1";
 import Titleh2 from "../../Blocks/Title_H2/Titleh2";
 import Accent from "../../Blocks/accent/Accent";
-import Separator from "../../Blocks/Separator/Separator";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-// import Tabs  from "react-bootstrap/Tabs"
 import {Tabs, Tab} from 'react-bootstrap';
 const Contacts = (props) => {
     document.title = props.title
     document.querySelector('meta[name="description"]').content = props.description
+    document.documentElement.scrollIntoView(true);
     return (
         <>
             <ReactCSSTransitionGroup

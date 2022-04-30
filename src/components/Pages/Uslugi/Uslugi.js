@@ -1,7 +1,6 @@
 import React from 'react';
 import './Uslugi.css';
 import Titleh1 from "../../Blocks/Title_H1/Titleh1";
-import ButtonForm from "../../Blocks/ButtonForm/ButtonForm";
 import s from "../Bitrix24/Bitrix24.module.css";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import MyForm from "../../Form/Form";
@@ -10,6 +9,7 @@ import Popup from "../../PopUp/Popup";
 const Uslugi = (props) => {
     document.title = props.title
     document.querySelector('meta[name="description"]').content = props.description
+    document.documentElement.scrollIntoView(true);
     return (
         <div>
             <ReactCSSTransitionGroup
