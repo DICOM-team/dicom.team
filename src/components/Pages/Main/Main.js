@@ -8,6 +8,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 const Main = (props) => {
     document.title = props.title
     document.querySelector('meta[name="description"]').content = props.description
+    document.documentElement.scrollIntoView(true);
     const Cardbuttons = mainMenu.items.map( (item) => {
         return (
             <div className={s.card + " col-4 col-md-3 col-xl-2"}><Link to={item.urm}><CardButton name={item.name} img={item.img}/></Link></div>

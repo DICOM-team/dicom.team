@@ -3,7 +3,9 @@ import ThreeColums from "../../Blocks/ThreeColums/ThreeColums";
 import Titleh1 from "../../Blocks/Title_H1/Titleh1";
 
 const Team = (props) => {
-
+    document.title = props.title
+    document.querySelector('meta[name="description"]').content = props.description
+    document.documentElement.scrollIntoView(true);
     return (
         <>
             <Titleh1 name={'Наша команда'} subname={''} />
