@@ -6,7 +6,7 @@ import logo from "../img/logo.svg";
 const Header = () => {
     return (
         <>
-            <div className={s.rowheader}>
+            <div className={'rowheader'}>
                 <div className="col-md-3"></div>
                 <div className={'col-9 col-xs-8 col-md-6'}>
                     <div className={s.logo}>
