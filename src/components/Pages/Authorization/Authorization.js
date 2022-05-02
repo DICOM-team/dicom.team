@@ -10,7 +10,7 @@ const Authorization = (props) => {
     document.documentElement.scrollIntoView(true);
     return (
         <>
-            <Titleh1 name={'ВХОД'} subname={''} />
+            <Titleh1 name={'ВХОД'} subname={'только для сотрудников компании'} />
             <div className={'flex-center'}>
                 <form onSubmit={''}>
 
