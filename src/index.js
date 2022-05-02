@@ -14,7 +14,8 @@ import Footer from "./components/Footer";
 import Bitrix24 from "./components/Pages/Bitrix24/Bitrix24";
 import TelegramBot from "./components/Pages/TelegramBot/TelegramBot";
 import Team from "./components/Pages/Team/Team";
-import NotFound from './components/NotFoundPages'
+import NotFound from './components/NotFoundPages';
+import Authorization from './components/Pages/Authorization/Authorization';
 import { YMInitializer } from 'react-yandex-metrika';
 
 ReactDOM.render(
@@ -35,7 +36,8 @@ ReactDOM.render(
                   <Route exact path="/promotion" element={ <Contacts title={'Dicom.Поддержка'} description={'Служба поддержки DICOM'}/> }/>
                   <Route exact path="/bitrix24" element={ <Bitrix24 title={'Dicom.Битрикс24'} description={'Золотой партнер Битркис24 - компания DICOM, более 10 лет внедрений, более 20 крупных проектов.'}/> }/>
                   <Route exact path="/1c" element={ <Contacts title={'Dicom.1C'} description={'Интеграции различных систем с 1С:Предпиятием'}/> }/>
-                  <Route exact path="/telegram-bot" element={ < TelegramBot title={'Dicom.Telegram'} description={'Разработка ботов для telegram любой сложности от 5000 руб.'}/> }/>
+                  <Route exact path="/telegram-bot" element={ <TelegramBot title={'Dicom.Telegram'} description={'Разработка ботов для telegram любой сложности от 5000 руб.'}/> }/>
+                  <Route exact path="/admin" element={ <Authorization title={'Dicom.Вход'} description={'Вход'}/> }/>
                   <Route exact path="*" element={<NotFound/>} />
               </Routes>
               </div>

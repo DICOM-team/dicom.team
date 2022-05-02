@@ -23,9 +23,11 @@ const Main = (props) => {
                 transitionAppearTimeout={1000}
                 transitionEnter={false}
                 transitionLeave={false}>
-            <div className={s.CardsButtons + ' row'}>
-                {Cardbuttons}
-            </div>
+
+                <div className={s.CardsButtons + ' row'}>
+                    {Cardbuttons}
+                </div>
+
             </ReactCSSTransitionGroup>
         </div>
     );
