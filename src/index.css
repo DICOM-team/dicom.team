@@ -40,6 +40,23 @@ h3 {
   padding: 0 30px;
   margin-top: 190px;
 }
+.scroll_head {
+  background-color: #bee5f9cc;
+}
+.scroll_head #logo_head {
+  padding: 0!important;
+  margin-bottom: -23px;
+  transition: .5s;
+}
+.scroll_head p {
+  display: none;
+}
+.scroll_head #enter_icon{
+  margin-top: 0!important;
+}
+.scroll_head #home_icon{
+  margin-top: 0!important;
+}
 .rowheader {
   padding: 0 30px;
   --bs-gutter-x: 1.5rem;
