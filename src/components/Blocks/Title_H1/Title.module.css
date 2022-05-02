@@ -1,5 +1,5 @@
 .title {
-    Color: #4c7ac2;
+    Color: var(--color-primary);
 }
 .subtitle {
     color: grey;

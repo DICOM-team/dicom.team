@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../../css/flex.min.css';
-import s from './Separator.module.css';
-const Separator = () => {
+import s from './Separator_free.module.css';
+const Separator_free = () => {
 
     return (
         <div className="flex-center">
@@ -10,4 +10,4 @@ const Separator = () => {
     );
 };
 
-export default Separator;
+export default Separator_free;
