@@ -1,5 +1,4 @@
 import React from 'react';
-// import s from './Bitrix24.module.css';
 import Titleh1 from "../../Blocks/Title_H1/Titleh1";
 import Titleh2 from "../../Blocks/Title_H2/Titleh2";
 import Accent from "../../Blocks/accent/Accent";
@@ -13,11 +12,11 @@ import WhiteBlock from "../../Blocks/WhiteBlock/WhiteBlock";
 import MyForm from "../../Form/Form";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
-
 const Bitrix24 = (props) => {
     document.title = props.title
     document.querySelector('meta[name="description"]').content = props.description
     document.documentElement.scrollIntoView(true);
+
     return (
         <div>
             <ReactCSSTransitionGroup
