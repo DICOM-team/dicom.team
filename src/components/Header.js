@@ -5,15 +5,15 @@ import logo from "../img/logo.svg";
 
 const Header = () => {
 
-    const [scrollY, setScrollY] = useState(0);
+    // const [scrollY, setScrollY] = useState(0);
 
     function handleScroll() {
-        setScrollY(window.pageYOffset);
+        // setScrollY(window.pageYOffset);
         if (window.pageYOffset>50) {
-            console.log("<jkmit 50")
+            // console.log("<jkmit 50")
             document.getElementById('head').classList.add('scroll_head')
         } else {
-            console.log("меньше")
+            // console.log("меньше")
             document.getElementById('head').classList.remove('scroll_head')
         }
     }
