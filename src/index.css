@@ -42,6 +42,7 @@ h3 {
 }
 .scroll_head {
   background-color: #bee5f9cc;
+  transition: .5s;
 }
 .scroll_head #logo_head {
   padding: 0!important;
@@ -70,7 +71,7 @@ h3 {
   left: 0;
   width: 100%;
   backdrop-filter: blur(7px);
-
+  transition: .5s;
 }
 body {
   margin: 0;
@@ -132,6 +133,10 @@ a {
   }
   .nav {
     background: var(--color-blue-light)!important;
+  }
+  .scroll_head #logo_head {
+    margin-bottom: 0;
+    width: 60%;
   }
 }
 .CopyRight {
