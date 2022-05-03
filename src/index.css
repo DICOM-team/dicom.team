@@ -125,7 +125,7 @@ a {
     display: none;
   }
   .carousel-control-next, .carousel-control-prev {
-    top: -165px!important;
+    top: 0px!important;
     bottom: 100%;
   }
   .main {
@@ -137,6 +137,15 @@ a {
   .scroll_head #logo_head {
     margin-bottom: 0;
     width: 60%;
+  }
+  .carousel {
+    margin-top: -80px;
+  }
+  .carousel-caption {
+    padding-bottom: 0;
+  }
+  .carousel-item img {
+    margin-top: -30px;
   }
 }
 .CopyRight {
