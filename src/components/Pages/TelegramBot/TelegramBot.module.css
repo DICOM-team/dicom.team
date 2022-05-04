@@ -1,10 +1,12 @@
 .listNumber {
     border-radius: 50%;
-    background-color: #ffc105;
+    background-color: var(--color-warning);
     color: #ffffff;
     margin: 0 auto;
     width: 4vw;
+    min-width: 40px;
     height: 4vw;
+    min-height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
