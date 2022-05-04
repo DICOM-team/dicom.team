@@ -1,0 +1,12 @@
+.list-number {
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    color: white;
+    margin: auto;
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+}
