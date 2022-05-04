@@ -30,7 +30,7 @@ const Cases = (props) => {
                     <img
                         className="d-block w-100"
                         src="/images/content/cases/brandcamp_case.png"
-                        alt="Image One"
+                        alt="brandcamp"
                     />
                     <Titleh3 name={'Описание работ выполенных в компании brandcamp'} subname={''} />
                     <p>
@@ -45,7 +45,7 @@ const Cases = (props) => {
                     <img
                         className="d-block w-100"
                         src="/images/content/cases/Romana.png"
-                        alt="Image Two"
+                        alt="Romana"
                     />
                     <Titleh3 name={'Описание работ выполенных в компании ROMANA'} subname={''} />
                     <p>Разработка, внедрение и автоматизация бизнес-процессов компании в Битрикс24</p>

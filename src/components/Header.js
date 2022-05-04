@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect } from 'react';
 import {Link} from "react-router-dom";
 import s from "./Pages/Main/Main.module.css";
 import logo from "../img/logo.svg";
 
 const Header = () => {
-
-    // const [scrollY, setScrollY] = useState(0);
 
     function handleScroll() {
         // setScrollY(window.pageYOffset);
@@ -43,7 +41,6 @@ const Header = () => {
                     <Link to={'/admin'}><img id={'enter_icon'} src="/images/enter.png" width={'23px'} alt={''} style={{ marginTop : '17px', marginLeft: '10px'}} /></Link>
                 </div>
             </div>
-            {/*<div className="fixed-center">Scroll position: {scrollY}px</div>*/}
         </>
     );
 };

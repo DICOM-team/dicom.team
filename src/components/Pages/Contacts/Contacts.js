@@ -18,7 +18,6 @@ const Contacts = (props) => {
                 transitionAppearTimeout={1000}
                 transitionEnter={false}
                 transitionLeave={false}>
-            {/*<hr/>*/}
             <Tabs defaultActiveKey="Контакты" id="uncontrolled-tab" className="mb-3">
                 <Tab eventKey="Контакты" title="Контакты">
                     <Titleh2 name={'Наши контакты'} subname={'самый удобный способ Telegram'}/>
@@ -45,7 +44,7 @@ const Contacts = (props) => {
                 </Tab>
                 <Tab eventKey="Реквизиты" title="Реквизиты">
                     <Titleh3 name={'Реквизиты'} subname={'ИП Бакшандаев А.В.'} />
-                    <p>
+
                         <table className={'table table-striped'}>
                             <tbody>
                             <tr>
@@ -132,7 +131,7 @@ const Contacts = (props) => {
                                 ВНИМАНИЕ! Оплата счета по указанным реквизатам означает согласие с условиями договора-оферта, размещенного по адресу в сети интернет: http://bavalex.bitrix24.site/dogovoroferta/
                             </>
                         }/>
-                    </p>
+
                 </Tab>
             </Tabs>
             </ReactCSSTransitionGroup>

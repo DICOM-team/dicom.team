@@ -1,56 +1,31 @@
 import React from "react";
-import ThreeColums from "../../Blocks/ThreeColums/ThreeColums";
 import Titleh1 from "../../Blocks/Title_H1/Titleh1";
+import {TeamList} from '../../../content/Team';
+import Titleh3 from "../../Blocks/Title_H3/Titleh3";
 
 const Team = (props) => {
     document.title = props.title
     document.querySelector('meta[name="description"]').content = props.description
     document.documentElement.scrollIntoView(true);
+    // Подготовим массив для команды
+    let Team_res = TeamList.items.map( (item, index) => {
+        return (
+            <div key={index} className="col-12 col-md-6 col-lg-4 p-3">
+                <div className="flex-center p-3">
+                    <Titleh3 name={item.name} subname={''} />
+                </div>
+                    <img src={item.photo} width="50%" alt=""/>
+                <p>
+                    <br/>
+                    {item.skills}
+                </p>
+            </div>
+        )
+    })
     return (
         <>
             <Titleh1 name={'Наша команда'} subname={''} />
-            <ThreeColums
-                TextColum1={'Алексей'} Text1={
-                    <>
-                        <img src="/images/team/Alex.png" width={'50%'} alt=""/>
-                        <br/><br/>
-                        <p>
-                            Системный архитектор
-                        </p>
-                    </>
-                }
-                TextColum2={'Вадим'} Text2={
-                    <>
-                        <img src="/images/team/Vadim.jpg" width={'50%'} alt=""/>
-                        <br/><br/>
-                        <p>
-                            Team leader, Backend-developer, Frontend developer
-                        </p>
-                    </>
-                }
-                TextColum3={'Сергей'} Text3={
-                    <>
-                        <img src="/images/team/python.png" width={'50%'} alt=""/>
-                        <br/><br/>
-                        <p>
-                            Python Backend-developer, telegram bot, QA-тестировщик'}
-                        </p>
-                    </>
-                }
-            />
-            <ThreeColums
-                TextColum1={'Аркадий'} Text1={
-                    <>
-                        <img src="/images/team/js.png" width={'50%'} alt=""/>
-                        <br/><br/>
-                        <p>
-                            JS Backend-developer Express, JS Frontend developer React
-                        </p>
-                    </>
-                }
-                TextColum2={'Дарья'} Text2={'UI/UX дизайнер'}
-                // TextColum3={'Сергей'} Text3={'Python, telegram bot, QA-тестировщик'}
-            />
+            <div className={'row'}>{Team_res}</div>
         </>
     )
 }
