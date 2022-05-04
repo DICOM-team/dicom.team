@@ -21,7 +21,6 @@ const TelegramBot = (props) => {
                 transitionAppearTimeout={1000}
                 transitionEnter={false}
                 transitionLeave={false}>
-            {/*<hr/>*/}
                 <Titleh1 name={'Разработка приложений (ботов) для Telegram'} subname={'любой сложности'} />
 
                 <Separator_free />

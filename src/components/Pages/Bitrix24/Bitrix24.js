@@ -3,7 +3,7 @@ import Titleh1 from "../../Blocks/Title_H1/Titleh1";
 import Titleh2 from "../../Blocks/Title_H2/Titleh2";
 import Accent from "../../Blocks/accent/Accent";
 import Separator from "../../Blocks/Separator/Separator";
-import Separator_free from "../../Blocks/Separator_free/Separator_free";
+import SeparatorFree from "../../Blocks/Separator_free/Separator_free";
 import ImgText from "../../Blocks/ImgText/imgText";
 import TextImg from "../../Blocks/TextImg/TextImg"
 import ThreeColums from "../../Blocks/ThreeColums/ThreeColums";
@@ -43,7 +43,7 @@ const Bitrix24 = (props) => {
                 </>
                 } />
 
-                <Separator_free />
+                <SeparatorFree />
 
                 <ImgText url={'/images/content/Bitirx24.png'} text={<> <p>
                     - Быстрый поиск контактов сотрудников. <br/>
@@ -58,7 +58,7 @@ const Bitrix24 = (props) => {
                     - Мобильные веб-приложения.<br/>
                 </p></>} title={'Что такое Битрикс24'} subname={''} />
 
-                <Separator_free />
+                <SeparatorFree />
 
                 <WhiteBlock content={
                     <TextImg url={'/images/content/kp_1x.png'} text={<> <p>
@@ -67,7 +67,7 @@ const Bitrix24 = (props) => {
                     </p></>} Title={'Битрикс24.Маркет Плюс'}/>
                 } />
 
-                <Separator_free />
+                <SeparatorFree />
 
                 <Titleh2 name={'Как мы работаем'} subname={'этапы проекта'} />
 

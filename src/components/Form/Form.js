@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 import CheckBox from '../ChekBox';
 import Input from '../Input';
 import TextArea from '../TextArea';
-import Select from '../Select';
+// import Select from '../Select';
 import Button from '../Buttons'
 import {Form} from '../../State/State'
 
@@ -12,7 +12,7 @@ class FormContainer extends Component {
     constructor(props) {
         super(props);
         let send_now = (Form.send) ? true : false
-        console.log(send_now)
+        // console.log(send_now)
         this.state = {
             newLead: {
                 name: '',
@@ -121,7 +121,7 @@ class FormContainer extends Component {
         }).then(response => {
             response.json().then(data =>{
                 Form.send = true
-                this.state.send = true
+                // this.state.send = true
                 this.setState( prevState => ({ newLead :
                         {...prevState.newLead, send: true
                         }

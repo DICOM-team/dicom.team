@@ -2,7 +2,7 @@ import React from "react";
 import Titleh1 from "../../Blocks/Title_H1/Titleh1";
 import Input from "../../Input";
 import Button from "../../Buttons";
-import Separator_free from "../../Blocks/Separator_free/Separator_free";
+import SeparatorFree from "../../Blocks/Separator_free/Separator_free";
 
 const Authorization = (props) => {
     document.title = props.title
@@ -48,7 +48,7 @@ const Authorization = (props) => {
 
                 </form>
             </div>
-            <Separator_free />
+            <SeparatorFree />
         </>
     )
 }
