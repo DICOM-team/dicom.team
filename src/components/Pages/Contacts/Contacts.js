@@ -40,6 +40,9 @@ const Contacts = (props) => {
                 </Tab>
                 <Tab eventKey="Офис" title="Офис">
                     <Titleh2 name={'Наш офис'} subname={'улица Академика Алексея Николаевича Крылова, 13'} />
+                    <div>
+                        <img src="/images/office.png" width={'50%'} alt=""/>
+                    </div>
                     <Accent context={'Помещение 1, первый этаж, вход с торца здания'}/>
                 </Tab>
                 <Tab eventKey="Реквизиты" title="Реквизиты">
