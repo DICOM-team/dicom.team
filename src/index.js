@@ -24,22 +24,22 @@ ReactDOM.render(
           <div className="App">
               <Header/>
               <div className={'main'}>
-              <Routes>
-                  <Route exact path="/" element={ <Main title={'DICOM.TEAM'} description={'Студия DICOM - цифровизация бизнеса!'}/> }/>
-                  <Route exact path="/Politic" element={ <Politic title={'Политика конфиденциальности'} description={''}/> }/>
-                  <Route exact path="/Contacts" element={ <Contacts title={'Dicom.Контакты'} description={'Страница с контактами DICOM'} /> }/>
-                  <Route exact path="/uslugi" element={ <Uslugi title={'Dicom.Приложения'} description={'Разработка приложений, телеграм ботов и других сервисов для бизнеса'}/> }/>
-                  <Route exact path="/services" element={ <Services title={'DICOM.Cервисы'} description={'Сервисы разработанные студией DICOM'} /> }/>
-                  <Route exact path="/cases" element={ <Cases title={'Dicom.Кейсы'} description={'Порфолио студии DICOM'}/> }/>
-                  <Route exact path="/team" element={ <Team title={'Dicom.Команда'} description={'Команда студии DICOM'}/> }/>
-                  <Route exact path="/vacancys" element={ <Vacancy title={'Dicom.Вакансии'} description={'Вакансии студии DICOM'}/> }/>
-                  <Route exact path="/promotion" element={ <Contacts title={'Dicom.Поддержка'} description={'Служба поддержки DICOM'}/> }/>
-                  <Route exact path="/bitrix24" element={ <Bitrix24 title={'Dicom.Битрикс24'} description={'Золотой партнер Битркис24 - компания DICOM, более 10 лет внедрений, более 20 крупных проектов.'}/> }/>
-                  <Route exact path="/1c" element={ <Contacts title={'Dicom.1C'} description={'Интеграции различных систем с 1С:Предпиятием'}/> }/>
-                  <Route exact path="/telegram-bot" element={ <TelegramBot title={'Dicom.Telegram'} description={'Разработка ботов для telegram любой сложности от 5000 руб.'}/> }/>
-                  <Route exact path="/admin" element={ <Authorization title={'Dicom.Вход'} description={'Вход'}/> }/>
-                  <Route exact path="*" element={<NotFound/>} />
-              </Routes>
+                  <Routes>
+                      <Route exact path="/" element={ <Main title={'DICOM.TEAM'} description={'Студия DICOM - цифровизация бизнеса!'}/> }/>
+                      <Route exact path="/Politic" element={ <Politic title={'Политика конфиденциальности'} description={'Политика конфиденциальности компании DICOM'}/> }/>
+                      <Route exact path="/Contacts" element={ <Contacts title={'Dicom.Контакты'} description={'Страница с контактами DICOM'} /> }/>
+                      <Route exact path="/uslugi" element={ <Uslugi title={'Dicom.Приложения'} description={'Разработка приложений, телеграм ботов и других сервисов для бизнеса'}/> }/>
+                      <Route exact path="/services" element={ <Services title={'DICOM.Cервисы'} description={'Сервисы разработанные студией DICOM'} /> }/>
+                      <Route exact path="/cases" element={ <Cases title={'Dicom.Кейсы'} description={'Порфолио студии DICOM'}/> }/>
+                      <Route exact path="/team" element={ <Team title={'Dicom.Команда'} description={'Команда студии DICOM'}/> }/>
+                      <Route exact path="/vacancys" element={ <Vacancy title={'Dicom.Вакансии'} description={'Вакансии студии DICOM'}/> }/>
+                      <Route exact path="/promotion" element={ <Contacts title={'Dicom.Поддержка'} description={'Служба поддержки DICOM'}/> }/>
+                      <Route exact path="/bitrix24" element={ <Bitrix24 title={'Dicom.Битрикс24'} description={'Золотой партнер Битркис24 - компания DICOM, более 10 лет внедрений, более 20 крупных проектов.'}/> }/>
+                      <Route exact path="/1c" element={ <Contacts title={'Dicom.1C'} description={'Интеграции различных систем с 1С:Предпиятием'}/> }/>
+                      <Route exact path="/telegram-bot" element={ <TelegramBot title={'Dicom.Telegram'} description={'Разработка ботов для telegram любой сложности от 5000 руб.'}/> }/>
+                      <Route exact path="/admin" element={ <Authorization title={'Dicom.Вход'} description={'Вход'}/> }/>
+                      <Route exact path="*" element={<NotFound/>} />
+                  </Routes>
               </div>
               <Footer/>
               <YMInitializer accounts={[88635494]} options={{webvisor: true}} version="2" />
