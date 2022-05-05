@@ -5,6 +5,7 @@ import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import WhiteBlock from "../../Blocks/WhiteBlock/WhiteBlock";
 import ImgText from "../../Blocks/ImgText/imgText";
 import Separator from "../../Blocks/Separator/Separator";
+import SeparatorFree from "../../Blocks/Separator_free/Separator_free";
 import Titleh3 from "../../Blocks/Title_H3/Titleh3";
 
 const Vacancy = (props) => {
@@ -20,10 +21,11 @@ const Vacancy = (props) => {
                     transitionEnter={false}
                     transitionLeave={false}>
                 <Titleh1 name={'DICOM - расширяет команду и ищет React разработчика.'} subname={'Предполагается длительное удалённое сотрудничество!'}/>
+                    <SeparatorFree />
                     <WhiteBlock content={
                         <>
-                            <ImgText url={'/logo512.png'} title={'Наш основной продукт'} subname={''} text={
-                            <div class={'text-start'}>
+                            <ImgText url={'/logo512.png'} title={'Наш основной продукт'} subname={'собственная CRM система'} text={
+                            <div className={'text-start'}>
                                 Универсальная модульная облачная платформа управления процессами компании&nbsp; на основе web технологий. <br/>
                             Система является комплексным решением для автоматизации и контроля различных бизнес процессов компании. Продукт включает в себя модули: &laquo;CRM&raquo;, &laquo;Задачник&raquo;, &laquo;Склад&raquo;
                             </div>} />
@@ -34,7 +36,7 @@ const Vacancy = (props) => {
                 <Titleh2 name={'Будем рады видеть вас в нашей команде!'} subname={''}/>
 
                     <Titleh3 name={'Что требуем:'} subname={''} />
-                    <div class={'text-start'}>
+                    <div className={'text-start'}>
                         <p>&mdash; опыт разработки SPA-приложений с применением React от двух лет;</p>
                         {/*<p>&mdash; Уверенное знание TypeScript</p>*/}
                         <p>&mdash; Уверенное владение React hooks</p>
