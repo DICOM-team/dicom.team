@@ -28,7 +28,7 @@ const Bitrix24 = (props) => {
 
                 <Titleh1 name={'Внедряем Битрикс24'} subname={'Хорошее дело быстрым не бывает'} />
 
-                <img src={'/images/content/Bitrix24-logo-480x360.png'} alt="Внедрение Битркис24 от DICOM" width={'50%'} />
+                <img src={'/images/sert/b24.png'} alt="Внедрение Битркис24 от DICOM" width={'75%'} />
 
                 <Separator />
 

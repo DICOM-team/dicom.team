@@ -5,7 +5,6 @@ import Accent from "../../Blocks/accent/Accent";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import {Tabs, Tab} from 'react-bootstrap';
 
-
 const Contacts = (props) => {
     document.title = props.title
     document.querySelector('meta[name="description"]').content = props.description
