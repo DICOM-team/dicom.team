@@ -121,7 +121,7 @@ class FormContainer extends Component {
             },
         }).then(response => {
             response.json().then(data =>{
-                console.log('отправлено из формы')
+                document.cookie = "FormSend=true";
                 Form.send = true
                 // this.state.send = true
                 this.setState( prevState => ({ newLead :
@@ -148,8 +148,8 @@ class FormContainer extends Component {
     }
 
     render() {
-        console.log(this.state.newLead.send)
-        if (!this.state.newLead.send) {
+        const cookie_send = document.cookie.match ( '(^|;) ?' + 'FormSend' + '=([^;]*)(;|$)' );
+        if (!cookie_send[2]==='true') {
             return (
                 <form className="container-fluid" onSubmit={this.handleFormSubmit}>
 
