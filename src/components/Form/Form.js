@@ -35,7 +35,7 @@ class FormContainer extends Component {
         this.handleClearForm = this.handleClearForm.bind(this);
         this.handleCheckBox = this.handleCheckBox.bind(this);
         this.handleInput = this.handleInput.bind(this);
-        console.log(this.state.newLead.send)
+        // console.log(this.state.newLead.send)
     }
 
     /* This lifecycle hook gets executed when the component mounts */
@@ -148,8 +148,19 @@ class FormContainer extends Component {
     }
 
     render() {
-        const cookie_send = document.cookie.match ( '(^|;) ?' + 'FormSend' + '=([^;]*)(;|$)' );
-        if (!cookie_send[2]==='true') {
+        const cookie_send = document.cookie.match ( '(^|;) ?FormSend=([^;]*)(;|$)' );
+        console.log(cookie_send)
+        let open_form
+        if (cookie_send==null) {
+            open_form = true;
+        }
+        else if (!cookie_send[2]==='true') {
+            open_form = true;
+        }
+        else {
+            open_form = false
+        }
+        if (open_form) {
             return (
                 <form className="container-fluid" onSubmit={this.handleFormSubmit}>
 
