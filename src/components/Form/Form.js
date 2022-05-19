@@ -111,7 +111,8 @@ class FormContainer extends Component {
             params: { "REGISTER_SONET_EVENT": "Y" }
         }
 
-        fetch('https://bavalex.bitrix24.ru/rest/1/goj45yq40qiuxu8y/crm.lead.add.json',{
+        // fetch('https://bavalex.bitrix24.ru/rest/1/goj45yq40qiuxu8y/crm.lead.add.json',{
+            fetch('http://localhost:5000/SendForm',{
             method: "POST",
             body: JSON.stringify(DataLead),
             headers: {
@@ -120,6 +121,7 @@ class FormContainer extends Component {
             },
         }).then(response => {
             response.json().then(data =>{
+                console.log('отправлено из формы')
                 Form.send = true
                 // this.state.send = true
                 this.setState( prevState => ({ newLead :

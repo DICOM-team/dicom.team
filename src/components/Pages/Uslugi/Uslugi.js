@@ -34,7 +34,7 @@ const Uslugi = (props) => {
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="1">
-                        <Accordion.Header><Titleh2 name={'Разработаем телдеграм бота'} subname={'интеграция бота с любыми API'} /></Accordion.Header>
+                        <Accordion.Header><Titleh2 name={'Разработаем телеграм бота любой сложности'} subname={'интеграция бота с любыми API'} /></Accordion.Header>
                         <Accordion.Body>
                             <ImgText url={'/images/bot-telegram.png'} title={'Консультация бесплатно'} subname={''} text={
                                 <div className={'text-start'}>
@@ -44,7 +44,22 @@ const Uslugi = (props) => {
                         </Accordion.Body>
                     </Accordion.Item>
                     <Accordion.Item eventKey="2">
-                        <Accordion.Header><Titleh2 name={'Битрикс24 - золотой партнер'} subname={'Внедрение, настройка, интеграции, бизнес-процессы, автоматизация'} /></Accordion.Header>
+                        <Accordion.Header><Titleh2 name={'Внедрим Битрикс24, мы официальный золотой партнер'} subname={'Внедрение, настройка, интеграции, бизнес-процессы, автоматизация'} /></Accordion.Header>
+                        <Accordion.Body>
+                            <ImgText url={'/images/sert/b24.png'} title={'Список работ'} subname={''} text={
+                                <div className={'text-start'}>
+                                    <ul>
+                                        <li>Автоматизация компнии с помощью бизнес-процессов Битрикс24</li>
+                                        <li>Оптимизация бизнес-процессов</li>
+                                        <li>Обучение как сотрудников так и руководителей.</li>
+                                        <li>Полное внедрение Битрикс24 под ключ. Сроки от полу года.</li>
+                                        <li>Стоимость расчитывается после подготовки ТЗ и аудита бизнес-процессов компании.</li>
+                                    </ul>
+                                </div>} />
+                        </Accordion.Body>
+                    </Accordion.Item>
+                    <Accordion.Item eventKey="3">
+                        <Accordion.Header><Titleh2 name={'Разработаем web приложение - SPA'} subname={'SPA — Single Page Application'} /></Accordion.Header>
                         <Accordion.Body>
                             <ImgText url={'/images/sert/b24.png'} title={'Список работ'} subname={''} text={
                                 <div className={'text-start'}>
