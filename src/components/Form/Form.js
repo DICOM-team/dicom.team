@@ -112,7 +112,7 @@ class FormContainer extends Component {
         }
 
         // fetch('https://bavalex.bitrix24.ru/rest/1/goj45yq40qiuxu8y/crm.lead.add.json',{
-            fetch('http://dicom.team:5000/SendForm',{
+            fetch('https://server.dicom.team/SendForm',{
             method: "POST",
             body: JSON.stringify(DataLead),
             headers: {
