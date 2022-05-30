@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:yandex="http://news.yandex.ru" xmlns:media="http://search.yahoo.com/mrss/" xmlns:turbo="http://turbo.yandex.ru" version="2.0">
+  <channel>
+    <title>DICOM</title>
+    <link>https://dicom.team</link>
+    <description>О компании DICOM</description>
+    <language>ru</language>
+    <item turbo="true">
+       <link>https://dicom.team/contacts</link>
+       <turbo:source>https://dicom.team/contacts/</turbo:source>
+       <turbo:topic>Контакты компании DICOM</turbo:topic>
+       <author>ИП Бакшандаев А В</author>
+       <turbo:content>
+          <![CDATA[
+
+              <header>
+                 <h1>Контакты компании DICOM</h1>
+                 <figure>
+                    <img src="https://dicom.team/images/contactspng.png">
+                 </figure>
+              </header>
+              <menu>
+                <a href="https://dicom.team/contacts/">Контакты</a>
+                <a href="https://dicom.team/uslugi">Услуги</a>
+              </menu>
+               <div data-block="breadcrumblist">
+                   <a href="https://dicom.team/">Home</a>
+                   <a href="https://dicom.team/contacts">Contacts</a>
+               </div>
+              <p>Наш телефон: +7 960 311 21 05  </br>
+                 WhatsApp и Telegram </br>
+                 e-mail: bavalex24@yandex.ru</p>
+          ]]>
+       </turbo:content>
+    </item>
+    <item turbo="true">
+       <link>https://dicom.team/uslugi</link>
+       <turbo:source>https://dicom.team/uslugi</turbo:source>
+       <turbo:topic>Услуги компании DICOM</turbo:topic>
+       <author>ИП Бакшандаев А В></author>
+       <turbo:content>
+          <![CDATA[
+              <header>
+                 <h1>Услуги компании DICOM</h1>
+                 <figure>
+                    <img src="https://dicom.team/images/bot-telegram.png">
+                 </figure>
+              </header>
+              <div data-block="breadcrumblist">
+                 <a href="https://dicom.team/">Home</a>
+                 <a href="https://dicom.team/uslugi">Услуги</a>
+             </div>
+              <p>
+              <ul>
+                <li>Разработаем приложение</li>
+                <li>Разработаем телеграм бота</li>
+                <li>Внедрим Битрикс24</li>
+                <li>Разработаем WEB приложение (SPA)</li>
+              </ul>
+              <p>
+          ]]>
+       </turbo:content>
+    </item>
+  </channel>
+</rss>
