@@ -18,6 +18,7 @@ import Team from "./components/Pages/Team/Team";
 import NotFound from './components/NotFoundPages';
 import Authorization from './components/Pages/Authorization/Authorization';
 import { YMInitializer } from 'react-yandex-metrika';
+import Websocket from "./components/Pages/Websocket/Websocket";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -39,10 +40,12 @@ ReactDOM.render(
                       <Route path="/vacancys" element={ <Vacancy title={'Dicom.Вакансии'} description={'Вакансии студии DICOM'}/> }/>
                       <Route path="/promotion" element={ <Contacts title={'Dicom.Поддержка'} description={'Служба поддержки DICOM'}/> }/>
                       <Route path="/bitrix24" element={ <Bitrix24 title={'Dicom.Битрикс24'} description={'Золотой партнер Битркис24 - компания DICOM, более 10 лет внедрений, более 20 крупных проектов.'}/> }/>
+                      <Route path="/tilda" element={ <Bitrix24 title={'Dicom.Tilda'} description={'Создание сайтов на Tilda'}/> }/>
                       <Route path="/1c" element={ <Contacts title={'Dicom.1C'} description={'Интеграции различных систем с 1С:Предпиятием'}/> }/>
                       <Route path="/telegram-bot" element={ <TelegramBot title={'Dicom.Telegram'} description={'Разработка ботов для telegram любой сложности от 5000 руб.'}/> }/>
                       <Route path="/admin" element={ <Authorization title={'Dicom.Вход'} description={'Вход'}/> }/>
                       <Route path="*" element={<NotFound/>} />
+                      <Route path="/websocket" element={<Websocket/>} />
                   </Routes>
               </div>
           </div>
