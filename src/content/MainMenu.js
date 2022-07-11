@@ -9,6 +9,7 @@ export let mainMenu = {
         {name: 'Битрикс24', urm: '/bitrix24', img: '/images/dicomB24.png'},
         {name: '1C', urm: '/1c', img: '/images/dicom1c.png'},
         {name: 'Telegram bots', urm: '/telegram-bot', img: '/images/telegram.png'},
-        {name: 'Сервисы', urm: '/services', img: '/images/icon1.png'}
+        {name: 'Сервисы', urm: '/services', img: '/images/icon1.png'},
+        {name: 'Tilda', urm: '/tilda', img: '/images/icon1.png'}
     ]
 }
