@@ -1,11 +1,8 @@
 import React from 'react';
 import Titleh1 from "../../Blocks/Title_H1/Titleh1";
-import Titleh2 from "../../Blocks/Title_H2/Titleh2";
-import Accent from "../../Blocks/accent/Accent";
 import Separator from "../../Blocks/Separator/Separator";
 import SeparatorFree from "../../Blocks/Separator_free/Separator_free";
 import ImgText from "../../Blocks/ImgText/imgText";
-import TextImg from "../../Blocks/TextImg/TextImg"
 import ThreeColums from "../../Blocks/ThreeColums/ThreeColums";
 import Popup from "../../PopUp/Popup";
 import WhiteBlock from "../../Blocks/WhiteBlock/WhiteBlock";
@@ -32,7 +29,7 @@ const Tilda = (props) => {
                 <Separator />
 
                 <WhiteBlock content={<>
-                    <img src="/images/content/Tilda/tilda_fon.jpg" alt="Сайт на Aspro"/>
+                    <img src="/images/content/Tilda/tilda_fon.jpg" alt="Сайт на Aspro" width={'75%'}/>
                 </>
                 } />
 

@@ -1,11 +1,9 @@
 import React from 'react';
 import Titleh1 from "../../Blocks/Title_H1/Titleh1";
 import Titleh2 from "../../Blocks/Title_H2/Titleh2";
-import Accent from "../../Blocks/accent/Accent";
 import Separator from "../../Blocks/Separator/Separator";
 import SeparatorFree from "../../Blocks/Separator_free/Separator_free";
 import ImgText from "../../Blocks/ImgText/imgText";
-import TextImg from "../../Blocks/TextImg/TextImg"
 import ThreeColums from "../../Blocks/ThreeColums/ThreeColums";
 import Popup from "../../PopUp/Popup";
 import WhiteBlock from "../../Blocks/WhiteBlock/WhiteBlock";
@@ -28,14 +26,13 @@ const Aspro = (props) => {
 
                 <Titleh1 name={'Разработка сайтов на 1С-Битрикс'} subname={'Запуск сайта на готовом решении; миграция, переезд на 1С-Битрикс. Доработка, развитие и продвижение.'} />
 
-                {/*<img src={'/images/sert/b24.png'} alt="Внедрение Битркис24 от DICOM" width={'75%'} />*/}
 
                 <Separator />
 
                 <WhiteBlock content={<>
                     <Titleh2 name={'Внедрение готовых решений от «Аспро»'}
                              subname={'Мы оказываем полный спектр услуг по настройке и доработке готовых сайтов и интернет-магазинов разработанных в Аспро и работающих на 1С-Битрикс. Занимаемся продвижением, оптимизацией под поисковые системы. У нас можно заказать установку SSL-сертификата для Битрикс, настройку «Яндекс.Директ» и любые другие услуги.'}/>
-                    <img src="/images/content/Aspro/benefit_1.jpg.webp" alt="Сайт на Aspro"/>
+                    <img src="/images/content/Aspro/benefit_1.jpg.webp" alt="Сайт на Aspro" width={'75%'}/>
                 </>
                 } />
 
@@ -70,7 +67,7 @@ const Aspro = (props) => {
 
                 <SeparatorFree />
 
-                <img src="/images/content/Aspro/30.jpg.webp" alt="Сайт на Aspro"/>
+                <img src="/images/content/Aspro/30.jpg.webp" alt="Сайт на Aspro" width={'75%'}/>
 
                 <SeparatorFree />
 
