@@ -14,6 +14,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Bitrix24 from "./components/Pages/Bitrix24/Bitrix24";
 import Aspro from "./components/Pages/Aspro/Aspro";
+import Tilda from "./components/Pages/Tilda/Tilda";
 import TelegramBot from "./components/Pages/TelegramBot/TelegramBot";
 import Team from "./components/Pages/Team/Team";
 import NotFound from './components/NotFoundPages';
@@ -41,7 +42,7 @@ ReactDOM.render(
                       <Route path="/vacancys" element={ <Vacancy title={'Dicom.Вакансии'} description={'Вакансии студии DICOM'}/> }/>
                       <Route path="/promotion" element={ <Contacts title={'Dicom.Поддержка'} description={'Служба поддержки DICOM'}/> }/>
                       <Route path="/bitrix24" element={ <Bitrix24 title={'Dicom.Битрикс24'} description={'Золотой партнер Битркис24 - компания DICOM, более 10 лет внедрений, более 20 крупных проектов.'}/> }/>
-                      <Route path="/tilda" element={ <Bitrix24 title={'Dicom.Tilda'} description={'Создание сайтов на Tilda'}/> }/>
+                      <Route path="/tilda" element={ <Tilda title={'Dicom.Tilda'} description={'Создание сайтов на Tilda'}/> }/>
                       <Route path="/aspro" element={ <Aspro title={'Dicom.Aspro'} description={'Создание сайтов 1C Битрикс на готовом решении ASPRO'}/> }/>
                       <Route path="/1c" element={ <Contacts title={'Dicom.1C'} description={'Интеграции различных систем с 1С:Предпиятием'}/> }/>
                       <Route path="/telegram-bot" element={ <TelegramBot title={'Dicom.Telegram'} description={'Разработка ботов для telegram любой сложности от 5000 руб.'}/> }/>
