@@ -28,11 +28,11 @@ const Tilda = (props) => {
 
                 <Titleh1 name={'Разработка сайтов на Tilda'} subname={'быстро от 3 дней'} />
 
-                <Separator />
+                <SeparatorFree />
 
                 <a className={'link'} href="https://dicom-team.tilda.ws">Пример страницы на tilda</a>
 
-                <Separator />
+                <SeparatorFree />
 
                 <WhiteBlock content={<>
                     <img src={img_1} alt="Сайт на Aspro" width={'75%'}/>
