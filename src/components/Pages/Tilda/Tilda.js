@@ -9,6 +9,9 @@ import WhiteBlock from "../../Blocks/WhiteBlock/WhiteBlock";
 import MyForm from "../../Form/Form";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
+// Картинки
+import img_1 from '../../../Images/content/Tilda/tilda_fon.jpg';
+
 const Tilda = (props) => {
     document.title = props.title
     document.querySelector('meta[name="description"]').content = props.description
@@ -29,7 +32,7 @@ const Tilda = (props) => {
                 <Separator />
 
                 <WhiteBlock content={<>
-                    <img src="/images/content/Tilda/tilda_fon.jpg" alt="Сайт на Aspro" width={'75%'}/>
+                    <img src={img_1} alt="Сайт на Aspro" width={'75%'}/>
                 </>
                 } />
 
