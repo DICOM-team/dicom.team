@@ -3,6 +3,7 @@ import Titleh1 from "../../Blocks/Title_H1/Titleh1";
 import {TeamList} from '../../../content/Team';
 import Titleh3 from "../../Blocks/Title_H3/Titleh3";
 
+
 const Team = (props) => {
     document.title = props.title
     document.querySelector('meta[name="description"]').content = props.description
