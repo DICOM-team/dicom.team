@@ -28,6 +28,9 @@ const Tilda = (props) => {
 
                 <Titleh1 name={'Разработка сайтов на Tilda'} subname={'быстро от 3 дней'} />
 
+                <Separator />
+
+                <a className={'link'} href="https://dicom-team.tilda.ws">Пример страницы на tilda</a>
 
                 <Separator />
 
