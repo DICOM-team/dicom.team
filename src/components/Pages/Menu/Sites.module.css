@@ -1,0 +1,35 @@
+.logo {
+    margin: 10px 0 40px 0;
+    transition: .5s;
+}
+.logo img {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    transition: .5s;
+}
+.sublogo {
+    font-size: calc(.5rem + .5vw);
+    margin-top: -30px;
+    font-weight: 500;
+    transition: .5s;
+}
+@media (max-width: 720px) {
+    .mobileMainBody {
+        /*padding: 30px;*/
+    }
+    .logo {
+        margin: 10px;
+    }
+    .logo img {
+        width: 80%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .sublogo {
+        margin-top: -30px;
+    }
+}
+.CardsButtons {
+    justify-content: left;
+    flex-wrap: wrap;
+}
