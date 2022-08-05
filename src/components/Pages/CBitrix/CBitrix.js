@@ -9,12 +9,20 @@ import Popup from "../../PopUp/Popup";
 import WhiteBlock from "../../Blocks/WhiteBlock/WhiteBlock";
 import MyForm from "../../Form/Form";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import {Link} from "react-router-dom";
+import s from "../Menu/Sites.module.css";
+import CardButton from "../../CardButton/CardButton";
+import {MenuSitesElements} from "../../../content/MenuSitesElements";
 
 const CBitrix = (props) => {
     document.title = props.title
     document.querySelector('meta[name="description"]').content = props.description
     document.documentElement.scrollIntoView(true);
-
+    let Cardbuttons = MenuSitesElements.items.map( (item, index) => {
+        return (
+            <div key={index} className={s.card + " col-4 col-md-3 col-xl-2"}><Link to={item.urm}><CardButton name={item.name} img={item.img}/></Link></div>
+        )
+    })
     return (
         <div>
             <ReactCSSTransitionGroup
@@ -24,7 +32,10 @@ const CBitrix = (props) => {
                 transitionEnter={false}
                 transitionLeave={false}>
 
-                <a className={'link'} href="/Sites">Назад</a>
+                <div className={s.CardsButtons + ' row'}>
+                    <div className={s.card + " col-4 col-md-3 col-xl-2"}><Link to={'/'}><CardButton name={''} img={'/images/icons/Left.png'}/></Link></div>
+                    {Cardbuttons}
+                </div>
 
                 <Titleh1 name={'Разработка сайтов на 1С-Битрикс'} subname={'Запуск сайта на готовом решении; миграция, переезд на 1С-Битрикс. Доработка, развитие и продвижение.'} />
 
