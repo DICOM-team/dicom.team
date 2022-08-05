@@ -11,12 +11,20 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 // Картинки
 import img_1 from '../../../Images/content/Tilda/tilda_fon.jpg';
+import {Link} from "react-router-dom";
+import CardButton from "../../CardButton/CardButton";
+import {MenuSitesElements} from "../../../content/MenuSitesElements";
+import s from "../Menu/Sites.module.css";
 
 const Tilda = (props) => {
     document.title = props.title
     document.querySelector('meta[name="description"]').content = props.description
     document.documentElement.scrollIntoView(true);
-
+    let Cardbuttons = MenuSitesElements.items.map( (item, index) => {
+        return (
+            <div key={index} className={s.card + " col-4 col-md-3 col-xl-2"}><Link to={item.urm}><CardButton name={item.name} img={item.img}/></Link></div>
+        )
+    })
     return (
         <div>
             <ReactCSSTransitionGroup
@@ -26,7 +34,10 @@ const Tilda = (props) => {
                 transitionEnter={false}
                 transitionLeave={false}>
 
-                <a className={'link'} href="/Sites">Назад</a>
+                <div className={s.CardsButtons + ' row'}>
+                    <div className={s.card + " col-4 col-md-3 col-xl-2"}><Link to={'/'}><CardButton name={''} img={'/images/icons/Left.png'}/></Link></div>
+                    {Cardbuttons}
+                </div>
 
                 <Titleh1 name={'Разработка сайтов на Tilda'} subname={'быстро от 3 дней'} />
 
