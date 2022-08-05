@@ -24,6 +24,8 @@ const Aspro = (props) => {
                 transitionEnter={false}
                 transitionLeave={false}>
 
+                <a className={'link'} href="/menuSites">Назад</a>
+
                 <Titleh1 name={'Разработка сайтов на 1С-Битрикс'} subname={'Запуск сайта на готовом решении; миграция, переезд на 1С-Битрикс. Доработка, развитие и продвижение.'} />
 
                 <img src={'/images/sert/sertificate_aspro.jpg'} alt="Внедрение готового решения от ASPRO для БУС Битрикс" width={'75%'} />

@@ -10,7 +10,8 @@ export let mainMenu = {
         {name: '1C', urm: '/1c', img: '/images/icons/dicom1c.png'},
         {name: 'Telegram bots', urm: '/telegram-bot', img: '/images/icons/telegram.png'},
         {name: 'Сервисы', urm: '/services', img: '/images/icons/icon1.png'},
-        {name: 'Aspro', urm: '/aspro', img: '/images/icons/aspro.png'},
-        {name: 'Tilda', urm: '/tilda', img: '/images/icons/Tilda_logo.png'}
+        //{name: 'Aspro', urm: '/aspro', img: '/images/icons/aspro.png'},
+        {name: 'Сайты', urm: '/menuSites', img: '/images/icons/Sites.png'}
+        //{name: 'Tilda', urm: '/tilda', img: '/images/icons/Tilda_logo.png'}
     ]
 }

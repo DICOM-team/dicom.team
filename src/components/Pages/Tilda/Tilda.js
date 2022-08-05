@@ -26,6 +26,8 @@ const Tilda = (props) => {
                 transitionEnter={false}
                 transitionLeave={false}>
 
+                <a className={'link'} href="/menuSites">Назад</a>
+
                 <Titleh1 name={'Разработка сайтов на Tilda'} subname={'быстро от 3 дней'} />
 
                 <SeparatorFree />
