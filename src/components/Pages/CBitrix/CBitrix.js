@@ -10,7 +10,7 @@ import WhiteBlock from "../../Blocks/WhiteBlock/WhiteBlock";
 import MyForm from "../../Form/Form";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
-const Aspro = (props) => {
+const CBitrix = (props) => {
     document.title = props.title
     document.querySelector('meta[name="description"]').content = props.description
     document.documentElement.scrollIntoView(true);
@@ -28,7 +28,7 @@ const Aspro = (props) => {
 
                 <Titleh1 name={'Разработка сайтов на 1С-Битрикс'} subname={'Запуск сайта на готовом решении; миграция, переезд на 1С-Битрикс. Доработка, развитие и продвижение.'} />
 
-                <img src={'/images/sert/sertificate_aspro.jpg'} alt="Внедрение готового решения от ASPRO для БУС Битрикс" width={'75%'} />
+                <img src={'/images/sert/1C_bitrix.jpg'} alt="Внедрение готового решения от ASPRO для БУС Битрикс" width={'75%'} />
 
                 <Separator />
 
@@ -95,4 +95,4 @@ const Aspro = (props) => {
     );
 };
 
-export default Aspro;
+export default CBitrix;

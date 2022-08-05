@@ -22,6 +22,8 @@ import NotFound from './components/NotFoundPages';
 import Authorization from './components/Pages/Authorization/Authorization';
 import { YMInitializer } from 'react-yandex-metrika';
 import Websocket from "./components/Pages/Websocket/Websocket";
+import Bitrix24Site from "./components/Pages/Bitrix24Site/Bitrix24Site";
+import CBitrix from "./components/Pages/CBitrix/CBitrix";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -33,9 +35,7 @@ ReactDOM.render(
                       <Route path="/" element={ <Main title={'DICOM.TEAM'} description={'Студия DICOM - цифровизация бизнеса!'}/> }/>
                       <Route path="/Politic" element={ <Politic title={'Политика конфиденциальности'} description={'Политика конфиденциальности компании DICOM'}/> }/>
                       <Route path="/Contacts/" element={ <Contacts title={'Dicom.Контакты'} description={'Страница с контактами DICOM'} /> } />
-                      <Route path="/Contacts/" element={ <ContactsInside title={'Dicom.Контакты'} description={'Страница с контактами DICOM'} /> } >
-                          <Route path="new" element={ <Team title={'Dicom.Команда'} description={'Команда студии DICOM'}/> }/>
-                      </Route>
+                      {/*<Route path="/Contacts/" element={ <ContactsInside title={'Dicom.Контакты'} description={'Страница с контактами DICOM'} /> } >*/}
                       <Route path="/uslugi" element={ <Uslugi title={'Dicom.Приложения'} description={'Разработка приложений, телеграм ботов и других сервисов для бизнеса'}/> }/>
                       <Route path="/services" element={ <Services title={'DICOM.Cервисы'} description={'Сервисы разработанные студией DICOM'} /> }/>
                       <Route path="/cases" element={ <Cases title={'Dicom.Кейсы'} description={'Порфолио студии DICOM'}/> }/>
@@ -43,9 +43,11 @@ ReactDOM.render(
                       <Route path="/vacancys" element={ <Vacancy title={'Dicom.Вакансии'} description={'Вакансии студии DICOM'}/> }/>
                       <Route path="/promotion" element={ <Contacts title={'Dicom.Поддержка'} description={'Служба поддержки DICOM'}/> }/>
                       <Route path="/bitrix24" element={ <Bitrix24 title={'Dicom.Битрикс24'} description={'Золотой партнер Битркис24 - компания DICOM, более 10 лет внедрений, более 20 крупных проектов.'}/> }/>
-                      <Route path="/tilda" element={ <Tilda title={'Dicom.Tilda'} description={'Создание сайтов на Tilda'}/> }/>
-                      <Route path="/aspro" element={ <Aspro title={'Dicom.Aspro'} description={'Создание сайтов 1C Битрикс на готовом решении ASPRO'}/> }/>
-                      <Route path="/menuSites" element={ <Sites title={'Dicom.Aspro'} description={'Создание сайтов 1C Битрикс на готовом решении ASPRO'}/> }/>
+                      <Route path="/Sites" element={ <Sites title={'Dicom.Сайты'} description={'Создание сайтов 1C Битрикс на готовом решении ASPRO'}/> } />
+                      <Route path="/Sites/bitrix24" element={ <Bitrix24Site title={'Dicom.Битрикс24.Сайты'} description={'Конструктор сайтов от Битрикс24'}/> }/>
+                      <Route path="/Sites/tilda" element={ <Tilda title={'Dicom.Tilda'} description={'Создание сайтов на Tilda'}/> }/>
+                      <Route path="/Sites/aspro" element={ <Aspro title={'Dicom.Aspro'} description={'Создание сайтов 1C Битрикс на готовом решении ASPRO'}/> }/>
+                      <Route path="/Sites/cbitrix" element={ <CBitrix title={'Dicom.1C Bitrix'} description={'Создание сайтов 1C Битрикс'}/> }/>
                       <Route path="/1c" element={ <Contacts title={'Dicom.1C'} description={'Интеграции различных систем с 1С:Предпиятием'}/> }/>
                       <Route path="/telegram-bot" element={ <TelegramBot title={'Dicom.Telegram'} description={'Разработка ботов для telegram любой сложности от 5000 руб.'}/> }/>
                       <Route path="/admin" element={ <Authorization title={'Dicom.Вход'} description={'Вход'}/> }/>
