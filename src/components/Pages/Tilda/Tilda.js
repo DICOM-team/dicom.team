@@ -27,6 +27,12 @@ const Tilda = (props) => {
     })
     return (
         <div>
+
+            <div className={s.CardsButtons + ' row'}>
+                <div className={s.card + " col-4 col-md-3 col-xl-2"}><Link to={'/'}><CardButton name={''} img={'/images/icons/Left.png'}/></Link></div>
+                {Cardbuttons}
+            </div>
+
             <ReactCSSTransitionGroup
                 transitionName="anim"
                 transitionAppear={true}
@@ -34,10 +40,7 @@ const Tilda = (props) => {
                 transitionEnter={false}
                 transitionLeave={false}>
 
-                <div className={s.CardsButtons + ' row'}>
-                    <div className={s.card + " col-4 col-md-3 col-xl-2"}><Link to={'/'}><CardButton name={''} img={'/images/icons/Left.png'}/></Link></div>
-                    {Cardbuttons}
-                </div>
+
 
                 <Titleh1 name={'Разработка сайтов на Tilda'} subname={'быстро от 3 дней'} />
 

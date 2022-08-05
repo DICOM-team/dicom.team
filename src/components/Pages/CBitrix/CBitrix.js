@@ -25,17 +25,18 @@ const CBitrix = (props) => {
     })
     return (
         <div>
+
+            <div className={s.CardsButtons + ' row'}>
+                <div className={s.card + " col-4 col-md-3 col-xl-2"}><Link to={'/'}><CardButton name={''} img={'/images/icons/Left.png'}/></Link></div>
+                {Cardbuttons}
+            </div>
+
             <ReactCSSTransitionGroup
                 transitionName="anim"
                 transitionAppear={true}
                 transitionAppearTimeout={1000}
                 transitionEnter={false}
                 transitionLeave={false}>
-
-                <div className={s.CardsButtons + ' row'}>
-                    <div className={s.card + " col-4 col-md-3 col-xl-2"}><Link to={'/'}><CardButton name={''} img={'/images/icons/Left.png'}/></Link></div>
-                    {Cardbuttons}
-                </div>
 
                 <Titleh1 name={'Разработка сайтов на 1С-Битрикс'} subname={'Запуск сайта на готовом решении; миграция, переезд на 1С-Битрикс. Доработка, развитие и продвижение.'} />
 
