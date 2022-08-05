@@ -24,7 +24,7 @@ const MenuSites = (props) => {
                 transitionEnter={false}
                 transitionLeave={false}>
                 <div className={s.CardsButtons + ' row'}>
-                    <div className={s.card + " col-4 col-md-3 col-xl-2"}><Link to={'/'}><CardButton name={''} img={'/images/icons/Left.png'}/></Link></div>
+                    <div className={s.card + " col-4 col-md-3 col-xl-2"}><Link to={'/'}><CardButton name={''} img={'/images/icons/left.png'}/></Link></div>
                     {Cardbuttons}
                 </div>
 
