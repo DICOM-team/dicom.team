@@ -40,6 +40,10 @@ const CBitrix = (props) => {
 
                 <Titleh1 name={'Разработка сайтов на 1С-Битрикс'} subname={'Запуск сайта на готовом решении; миграция, переезд на 1С-Битрикс. Доработка, развитие и продвижение.'} />
 
+                <a className={'link'} href="https://bitrix.dicom.team/">Пример нашей страницы на 1С-Битрикс</a>
+
+                <SeparatorFree />
+
                 <img src={'/images/sert/1C_bitrix.jpg'} alt="Внедрение готового решения от ASPRO для БУС Битрикс" width={'75%'} />
 
                 <Separator />
