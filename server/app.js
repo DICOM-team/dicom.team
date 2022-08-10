@@ -13,7 +13,7 @@ app.listen(5000, () => {
 
 app.post("/SendForm", (req, res)=> {
     // console.log(req.body)
-    const result = fetch('https://bavalex.bitrix24.ru/rest/1/goj45yq40qiuxu8y/crm.lead.add.json',{
+    const result = fetch('https://bavalex.bitrix24.ru/rest/1/3fkv91t8vyyk10bc/crm.lead.add.json',{
         method: "POST",
         body: JSON.stringify(req.body),
         headers: {

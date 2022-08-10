@@ -29,7 +29,7 @@ const Cases = (props) => {
                     </Carousel.Caption>
                     <img
                         className="d-block w-100"
-                        src="/images/content/cases/brandcamp_case.png"
+                        src="/images/content/cases/brandcamp.png"
                         alt="brandcamp"
                     />
                     <Titleh3 name={'Описание работ выполенных в компании brandcamp'} subname={''} />
@@ -44,7 +44,7 @@ const Cases = (props) => {
                     </Carousel.Caption>
                     <img
                         className="d-block w-100"
-                        src="/images/content/cases/Romana.png"
+                        src="/images/content/cases/ROMANA2.png"
                         alt="Romana"
                     />
                     <Titleh3 name={'Описание работ выполенных в компании ROMANA'} subname={''} />
