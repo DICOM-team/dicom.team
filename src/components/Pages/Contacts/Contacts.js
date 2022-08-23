@@ -38,11 +38,11 @@ const Contacts = (props) => {
 
                 </Tab>
                 <Tab eventKey="Офис" title="Офис">
-                    <Titleh2 name={'Наш офис'} subname={'улица Академика Алексея Николаевича Крылова, 13'} />
+                    <Titleh2 name={'Наш офис'} subname={'428 000, г. Чебоксары, улица Ярославская, 76'} />
                     <div>
                         <img src="/images/office.png" width={'50%'} alt=""/>
                     </div>
-                    <Accent context={'Помещение 1, первый этаж, вход с торца здания'}/>
+                    <Accent context={'Офис 514'}/>
                 </Tab>
                 <Tab eventKey="Реквизиты" title="Реквизиты">
                     <Titleh3 name={'Реквизиты'} subname={'ИП Бакшандаев А.В.'} />
