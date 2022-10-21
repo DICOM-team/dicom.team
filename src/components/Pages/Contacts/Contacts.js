@@ -24,11 +24,12 @@ const Contacts = (props) => {
                     <div className="container">
                         <div className="row flex-center">
                             <div className="col-12 col-md-6">
-                                <img src="/images/contactspng.png" width={'100%'} alt=""/>
+                                <img src="/images/contact_page2.png" width={'100%'} alt=""/>
                             </div>
                             <div className="col-12 col-md-6">
                                 <b className={'Lage_text'}>
-                                    Наш телефон: +7 960 311 21 05 <br/>
+                                    Наши телефоны:  (8352) 56-55-00<br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; +7 (960) 311 21 05
                                     WhatsApp и <a href={'https://t.me/dicom_team'}>Telegram</a> <br/>
                                     e-mail: bavalex24@yandex.ru
                                 </b>
