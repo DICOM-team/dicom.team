@@ -11,7 +11,7 @@ export let mainMenu = {
         {name: 'Telegram bots', urm: '/telegram-bot', img: '/images/icons/telegram.png'},
         {name: 'Сервисы', urm: '/services', img: '/images/icons/icon1.png'},
         //{name: 'Aspro', urm: '/aspro', img: '/images/icons/aspro.png'},
-        {name: 'Сайты', urm: '/Sites', img: '/images/icons/Sites.png'}
-        //{name: 'Tilda', urm: '/tilda', img: '/images/icons/Tilda_logo.png'}
+        {name: 'Сайты', urm: '/Sites', img: '/images/icons/Sites.png'},
+        // {name: 'Игры', urm: '/games', img: '/images/icons/Tilda_logo.png'}
     ]
 }
