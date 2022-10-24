@@ -12,6 +12,6 @@ export let mainMenu = {
         {name: 'Сервисы', urm: '/services', img: '/images/icons/icon1.png'},
         //{name: 'Aspro', urm: '/aspro', img: '/images/icons/aspro.png'},
         {name: 'Сайты', urm: '/Sites', img: '/images/icons/Sites.png'},
-        // {name: 'Игры', urm: '/games', img: '/images/icons/Tilda_logo.png'}
+        {name: 'Игры', urm: '/games', img: '/images/icons/Tilda_logo.png'}
     ]
 }
