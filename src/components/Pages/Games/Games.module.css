@@ -14,27 +14,35 @@
 .eggsLt {
     display: flex;
     justify-content: start;
-    color: red;
+    color: #cfe8ef;
     flex-direction: row;
 }
 .eggsLb {
     display: flex;
     justify-content: start;
-    color: red;
+    color: #cfe8ef;
     flex-direction: row;
 }
 .eggsRt {
     display: flex;
     justify-content: end;
-    color: #4c7ac2;
+    color: #cfe8ef;
     flex-direction: row-reverse;
 }
 .eggsRb {
     display: flex;
     justify-content: end;
-    color: #4c7ac2;
+    color: #cfe8ef;
     flex-direction: row-reverse;
 }
 .wolf {
-    width: 40%;
+    width: 500px;
+    font-size: 50px;
+}
+.wolf img {
+    width: 500px;
+}
+
+.hide {
+    opacity: 0;
 }
