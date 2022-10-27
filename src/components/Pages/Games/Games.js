@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import s from './Games.module.css'
 import Titleh1 from "../../Blocks/Title_H1/Titleh1";
+import Eggs from "../../Games/NuPogodi/Eggs/Eggs";
+import DicomButton from "../../UI/Button/DicomButton";
 
 const Games = (props) => {
     document.title = props.title
@@ -90,34 +92,22 @@ const Games = (props) => {
     return (
         <div>
                 {/*<hr/>*/}
-                <Titleh1 name={'Ну погоди!'} subname={'игровая приставка из СССР'} />
+                {/*<Titleh1 name={'Ну погоди!'} subname={'игровая приставка из СССР'} />*/}
 
-                <div>
-                    <div>{speed}</div>
-                    <button onClick={start}>Старт</button>
-                    <button onClick={stop}>Стоп</button>
-                    <button onClick={newSpeed}>Скорость</button>
+                <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                    <DicomButton color='#A4F3A59E' onClick={start}>Старт</DicomButton>
+                    <DicomButton color='#FD9898C3' onClick={stop}>Стоп</DicomButton>
+                    <DicomButton onClick={newSpeed}>Скорость {speed}</DicomButton>
                     <br></br>
 
                 </div>
                 <div id={'convas'} className={s.convas}>
 
                     <div> {/*Левые яйца */}
-                        <div className={s.eggsLt}>
-                            <div id='6'>0</div>
-                            <div id='7'>0</div>
-                            <div id='8'>0</div>
-                            <div id='9'>0</div>
-                            <div id='10'>0</div>
-                        </div>
+                        <Eggs position={'left'} i={5}/>
                         <div className={s.break}></div>
-                        <div className={s.eggsLb}>
-                            <div id={'1'}>0</div>
-                            <div id={'2'}>0</div>
-                            <div id={'3'}>0</div>
-                            <div id={'4'}>0</div>
-                            <div id={'5'}>0</div>
-                        </div>
+                        <Eggs position={'left'} i={0}/>
+                        <div className={s.break}></div>
                     </div>
 
                     <div id={'wolf'} className={s.wolf}>  {/*Волк*/}
@@ -126,50 +116,42 @@ const Games = (props) => {
 
 
                     <div> {/*Правые яйца*/}
-                        <div className={s.eggsRt}>
-                            <div id={'11'}>0</div>
-                            <div id={'12'}>0</div>
-                            <div id={'13'}>0</div>
-                            <div id={'14'}>0</div>
-                            <div id={'15'}>0</div>
-                        </div>
+                        <Eggs position={'right'} i={10}/>
                         <div className={s.break}></div>
-                        <div className={s.eggsRb}>
-                            <div id={'16'}>0</div>
-                            <div id={'17'}>0</div>
-                            <div id={'18'}>0</div>
-                            <div id={'19'}>0</div>
-                            <div id={'20'}>0</div>
-                        </div>
+                        <Eggs position={'right'} i={15}/>
+                        <div className={s.break}></div>
                     </div>
 
                 </div>
+            {/*Блок кнопок управления*/}
+            <div className={s.convas}>
+                <DicomButton onClick={() => {
+                    setWolf(2)
+                    let elm = document.getElementById('wolf')
+                    elm.innerHTML = '<img src="/images/wolf/2.png"/>'
+                }
+                }>Верх лево</DicomButton>
+                <DicomButton onClick={() => {
+                    setWolf(3)
+                    let elm = document.getElementById('wolf')
+                    elm.innerHTML = '<img src="/images/wolf/3.png"/>'
+                }
+                }>Верх право</DicomButton>
+                <div className={s.break_buttons}></div>
+                <DicomButton onClick={() => {
+                    setWolf(1)
+                    let elm = document.getElementById('wolf')
+                    elm.innerHTML = '<img src="/images/wolf/1.png"/>'
+                }
+                }>Низ лево</DicomButton>
+                <DicomButton onClick={() => {
+                    setWolf(4)
+                    let elm = document.getElementById('wolf')
+                    elm.innerHTML = '<img src="/images/wolf/4.png"/>'
+                }
+                }>Низ право</DicomButton>
+            </div>
 
-            <button onClick={() => {
-                setWolf(2)
-                let elm = document.getElementById('wolf')
-                elm.innerHTML = '<img src="/images/wolf/2.png"/>'
-            }
-            }>Верх лево</button>
-            <button onClick={() => {
-                setWolf(3)
-                let elm = document.getElementById('wolf')
-                elm.innerHTML = '<img src="/images/wolf/3.png"/>'
-            }
-            }>Верх право</button>
-            <br></br>
-            <button onClick={() => {
-                setWolf(1)
-                let elm = document.getElementById('wolf')
-                elm.innerHTML = '<img src="/images/wolf/1.png"/>'
-            }
-            }>Низ лево</button>
-            <button onClick={() => {
-                setWolf(4)
-                let elm = document.getElementById('wolf')
-                elm.innerHTML = '<img src="/images/wolf/4.png"/>'
-            }
-            }>Низ право</button>
             <div id={'result'}>
                 Поймал {score}
             </div>

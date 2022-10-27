@@ -5,6 +5,12 @@
 .break {
     flex-basis: 100%;
     height: 0;
+    border-top: solid 2px brown;
+    padding-bottom: 100px;
+}
+.break_buttons {
+    flex-basis: 100%;
+    height: 0;
 }
 .convas {
     display: flex;
@@ -14,25 +20,25 @@
 .eggsLt {
     display: flex;
     justify-content: start;
-    color: #cfe8ef;
+    color: #677377;
     flex-direction: row;
 }
 .eggsLb {
     display: flex;
     justify-content: start;
-    color: #cfe8ef;
+    color: #677377;
     flex-direction: row;
 }
 .eggsRt {
     display: flex;
     justify-content: end;
-    color: #cfe8ef;
+    color: #677377;
     flex-direction: row-reverse;
 }
 .eggsRb {
     display: flex;
     justify-content: end;
-    color: #cfe8ef;
+    color: #677377;
     flex-direction: row-reverse;
 }
 .wolf {
