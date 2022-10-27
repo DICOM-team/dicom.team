@@ -1,0 +1,6 @@
+.eggs {
+    display: flex;
+    justify-content: start;
+    color: #cfe8ef;
+    flex-direction: row;
+}
