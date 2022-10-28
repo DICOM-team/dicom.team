@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
-import s from './Games.module.css'
-import Titleh1 from "../../Blocks/Title_H1/Titleh1";
-import Eggs from "../../Games/NuPogodi/Eggs/Eggs";
-import DicomButton from "../../UI/Button/DicomButton";
+import React, {useRef, useState} from 'react'
+import s from './NuPogodi.module.css'
+import Titleh1 from "../../../Blocks/Title_H1/Titleh1";
+import Eggs from "./Eggs/Eggs";
+import Wolf from "./wolf/Wolf";
+import DicomButton from "../../../UI/Button/DicomButton";
 
-const Games = (props) => {
+const NuPogodi = (props) => {
     document.title = props.title
     document.querySelector('meta[name="description"]').content = props.description
     document.documentElement.scrollIntoView(true);
@@ -14,23 +15,54 @@ const Games = (props) => {
     const [ idInterval, setIdInterval] = useState(0)
     const [ score, setScore] = useState(0)
     const [ scoreBad, setScoreBad] = useState(0)
+    const [ gameTime, setGameTime] = useState(0)
+    const [ gameCount, setGameCount] = useState(0)
 
-    // Изменение скорости генерации Яиц
+    let refScore = useRef()
+    let refScoreBad = useRef()
+    let refTime = useRef()
+    let refSpeed = useRef()
+    let refGameCount = useRef()
+    // !!! Надо свой хук написать
+    // const [ gameStarted, setGameStarted] = useState(false)
+
+    // Запуск яиц
     let start = () => {
         console.log('start сработал')
+        // Убираем шапку
+        let head = document.getElementById('head')
+        let main = document.getElementsByClassName('main')
+        head.style.display = 'none'
+        main[0].style.marginTop = '0px'
+
         let idInter
         idInter = setInterval ( ()=> {
-            let rnd = Math.floor(Math.random() * 4 + 1)
-            egg(rnd, wolf)
+                let GameCount = Number(refGameCount.current.innerHTML)
+                let timeNow = Number(refTime.current.innerHTML)
+                let speedNow = Number(refSpeed.current.innerHTML)
+                    if (GameCount > speedNow) {
+                            let rnd = Math.floor(Math.random() * 4 + 1)
+                            egg(rnd, wolf)
+                            setGameCount( 0)
+                            setSpeed((speedNow<500) ? 500 : (speedNow - 500))
+                        } else
+                    {
+                        setGameCount( GameCount + 10)
+                    }
+                    setGameTime((Number(timeNow.toFixed(2)) + 0.01).toFixed(2))
             },
-            speed
+            10
         )
         setIdInterval(idInter)
     }
+
     let stop = () => {
+        let head = document.getElementById('head')
+        let main = document.getElementsByClassName('main')
+        head.style.display = ''
+        main[0].style.marginTop = '190px'
         console.log('id ' + idInterval + ' по stop')
         clearInterval(idInterval)
-
     }
 
     let egg = (rnd, inerwolf) => {
@@ -41,21 +73,10 @@ const Games = (props) => {
                 // Шестой цикл генерации яйца проверка на поймал
                 if (i===6) {
                     let position = Number(getPositionWolf())
-                    console.log('проверка на поймал -- рандом -------------- ' + rnd)
-                    console.log('Позиция волка переданная при запуске яйца ' + inerwolf)
-                    console.log('Забрали позицию сами ---------------------- ' + position)
-                    if (rnd === position) {
-                        // let elm = document.getElementById('result')
-                        // elm.innerHTML = 'Поймал!!!'
-                        let score2 = Number(document.getElementById('score').innerHTML)
-                        setScore(score2 + 1)
-                        // console.log("Поймал !!!!!!")
+                   if (rnd === position) {
+                        setScore(Number(refScore.current.innerHTML) + 1)
                     } else {
-                        // let elm = document.getElementById('result')
-                        // elm.innerHTML = "бум-бум-бум"
-                        let scoreBad2 = Number(document.getElementById('scoreBad').innerHTML)
-                        setScoreBad(scoreBad2 + 1)
-                        // console.log("бум-бум-бум")
+                        setScoreBad(Number(refScoreBad.current.innerHTML) + 1)
                     }
                 }
                 else {
@@ -93,11 +114,19 @@ const Games = (props) => {
         <div>
                 {/*<hr/>*/}
                 {/*<Titleh1 name={'Ну погоди!'} subname={'игровая приставка из СССР'} />*/}
-
+            <div>
+                <span ref={refTime}>{gameTime}</span> секунд
+            </div>
                 <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                    <div id={'result'}>
+                        Поймал {score}
+                    </div>
                     <DicomButton color='#A4F3A59E' onClick={start}>Старт</DicomButton>
                     <DicomButton color='#FD9898C3' onClick={stop}>Стоп</DicomButton>
                     <DicomButton onClick={newSpeed}>Скорость {speed}</DicomButton>
+                    <div id={'Drop'}>
+                        Разбил {scoreBad}
+                    </div>
                     <br></br>
 
                 </div>
@@ -110,10 +139,8 @@ const Games = (props) => {
                         <div className={s.break}></div>
                     </div>
 
-                    <div id={'wolf'} className={s.wolf}>  {/*Волк*/}
-                        <img src="/images/wolf/1.png"/>
-                    </div>
-
+                    {/*Волк*/}
+                   <Wolf position={wolf}/>
 
                     <div> {/*Правые яйца*/}
                         <Eggs position={'right'} i={10}/>
@@ -125,51 +152,33 @@ const Games = (props) => {
                 </div>
             {/*Блок кнопок управления*/}
             <div className={s.convas}>
-                <DicomButton onClick={() => {
-                    setWolf(2)
-                    let elm = document.getElementById('wolf')
-                    elm.innerHTML = '<img src="/images/wolf/2.png"/>'
-                }
-                }>Верх лево</DicomButton>
-                <DicomButton onClick={() => {
-                    setWolf(3)
-                    let elm = document.getElementById('wolf')
-                    elm.innerHTML = '<img src="/images/wolf/3.png"/>'
-                }
-                }>Верх право</DicomButton>
+                <DicomButton onClick={() => setWolf(2)}>Верх лево</DicomButton>
+                <DicomButton onClick={() => setWolf(3)}>Верх право</DicomButton>
                 <div className={s.break_buttons}></div>
-                <DicomButton onClick={() => {
-                    setWolf(1)
-                    let elm = document.getElementById('wolf')
-                    elm.innerHTML = '<img src="/images/wolf/1.png"/>'
-                }
-                }>Низ лево</DicomButton>
-                <DicomButton onClick={() => {
-                    setWolf(4)
-                    let elm = document.getElementById('wolf')
-                    elm.innerHTML = '<img src="/images/wolf/4.png"/>'
-                }
-                }>Низ право</DicomButton>
+                <DicomButton onClick={() => setWolf(1)}>Низ лево</DicomButton>
+                <DicomButton onClick={() => setWolf(4)}>Низ право</DicomButton>
             </div>
 
-            <div id={'result'}>
-                Поймал {score}
-            </div>
-            <div id={'Drop'}>
-                Разбил {scoreBad}
-            </div>
+            <Titleh1 name={'Ну погоди!'} subname={'игровая приставка из СССР'} />
+
             <div id={'position'} className={s.hide}>
                 {wolf}
             </div>
-            <div id={'score'} className={s.hide}>
+            <div ref={refScore} className={s.hide}>
                 {score}
             </div>
-            <div id={'scoreBad'} className={s.hide}>
+            <div ref={refScoreBad} className={s.hide}>
                 {scoreBad}
+            </div>
+            <div ref={refSpeed} className={s.hide}>
+                {speed}
+            </div>
+            <div ref={refGameCount} className={s.hide}>
+                {gameCount}
             </div>
 
         </div>
     );
 };
 
-export default Games;
+export default NuPogodi;

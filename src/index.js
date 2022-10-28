@@ -24,7 +24,7 @@ import { YMInitializer } from 'react-yandex-metrika';
 import Websocket from "./components/Pages/Websocket/Websocket";
 import Bitrix24Site from "./components/Pages/Bitrix24Site/Bitrix24Site";
 import CBitrix from "./components/Pages/CBitrix/CBitrix";
-import Games from "./components/Pages/Games/Games";
+import NuPogodi from "./components/Pages/Games/NuPogodi/NuPogodi";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -54,7 +54,7 @@ ReactDOM.render(
                       <Route path="/admin" element={ <Authorization title={'Dicom.Вход'} description={'Вход'}/> }/>
                       <Route path="*" element={<NotFound/>} />
                       <Route path="/websocket" element={<Websocket/>} />
-                      <Route path="/games" element={<Games title={'Dicom.Игры'} description={'Старые добрые игры'} />}  />
+                      <Route path="/games" element={<NuPogodi title={'Dicom.Игры'} description={'Старые добрые игры'} />}  />
                   </Routes>
               </div>
           </div>
