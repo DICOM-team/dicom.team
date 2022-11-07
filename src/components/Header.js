@@ -26,6 +26,8 @@ const Header = () => {
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
+
+
     return (
         <>
             <div id={'head'} className={'rowheader'}>

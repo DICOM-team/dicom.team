@@ -25,6 +25,7 @@ import Websocket from "./components/Pages/Websocket/Websocket";
 import Bitrix24Site from "./components/Pages/Bitrix24Site/Bitrix24Site";
 import CBitrix from "./components/Pages/CBitrix/CBitrix";
 import NuPogodi from "./components/Pages/Games/NuPogodi/NuPogodi";
+import Signx from "./components/Pages/signx/Signx";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -55,6 +56,7 @@ ReactDOM.render(
                       <Route path="*" element={<NotFound/>} />
                       <Route path="/websocket" element={<Websocket/>} />
                       <Route path="/games" element={<NuPogodi title={'Dicom.Игры'} description={'Старые добрые игры'} />}  />
+                      <Route path="/signx" element={<Signx title={'Dicom.signx'} description={'Электронный документооборот без usb токена по технологии SignX'} />}  />
                   </Routes>
               </div>
           </div>
