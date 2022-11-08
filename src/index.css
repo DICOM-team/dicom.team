@@ -105,7 +105,7 @@ a {
 }
 .App {
   padding: 0 60px;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 .App>p {
   text-align: left;
