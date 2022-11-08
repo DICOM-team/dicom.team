@@ -1,8 +1,14 @@
-/*.button {*/
-/*    margin: 20px;*/
-/*    padding: 20px;*/
-/*    border-radius: 10px;*/
-/*    border: 0;*/
-/*    background-color: rgba(35, 231, 231, 0.5);*/
-/*    font-size: 20px;*/
-/*}*/
+.accordion-button:not(.collapsed) {
+    color: dimgray;
+    background-color: #ffffff96;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.accordion-button {
+    background-color: #fff0;
+}
+
+.accordion-item {
+    background-color: #fff0;
+    border: 1px solid rgba(0,0,0,.125);
+}

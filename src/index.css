@@ -4,8 +4,9 @@
   --color-primary-10: #4c7ac217;
   --color-blue: #019ec7;
   --color-blue-light: #bee5f9;
-  --color-accent: #c10865;
+  --color-accent: #19875426;
   --color-warning: #ffc105;
+  --color-light: #dcf9ff;
 }
 h1, h2, h3, h4, h5 {
   font-weight: 200;
@@ -176,16 +177,21 @@ a {
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
-  border: 0;
-  background-color: var(--color-blue);
+  border: solid 2px;
+  /*background-color: #d0f6ff;*/
   font-size: 20px;
-  color: white;
+  color: var(--color-primary);
+  background-color: var(--color-light);
 }
 .btn-primary:hover {
-  background-color: var(--color-primary);
+  background-color: var(--color-blue-light);
+  /*background-color: var(--color-accent);*/
+  color: var(--color-primary);
 }
 .btn-primary:focus {
-  background-color: var(--color-primary);
+  background-color: var(--color-light);
+  color: var(--color-primary);
+  border: solid 2px;
 }
 .anim-appear {
   opacity: 0.01;
