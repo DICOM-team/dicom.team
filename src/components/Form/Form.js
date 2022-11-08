@@ -18,7 +18,7 @@ class FormContainer extends Component {
                 name: '',
                 phone: '',
                 // gender: '',
-                skills: [],
+                products: [],
                 about: '',
                 send: send_now
             },
@@ -66,7 +66,7 @@ class FormContainer extends Component {
     }
 
     handleTextArea(e) {
-        console.log("Inside handleTextArea");
+        // console.log("Inside handleTextArea");
         let value = e.target.value;
         this.setState(prevState => ({
             newLead: {
@@ -81,14 +81,14 @@ class FormContainer extends Component {
         const newSelection = e.target.value;
         let newSelectionArray;
 
-        if(this.state.newLead.skills.indexOf(newSelection) > -1) {
-            newSelectionArray = this.state.newLead.skills.filter(s => s !== newSelection)
+        if(this.state.newLead.products.indexOf(newSelection) > -1) {
+            newSelectionArray = this.state.newLead.products.filter(s => s !== newSelection)
         } else {
-            newSelectionArray = [...this.state.newLead.skills, newSelection];
+            newSelectionArray = [...this.state.newLead.products, newSelection];
         }
 
         this.setState( prevState => ({ newLead:
-                    {...prevState.newLead, skills: newSelectionArray }
+                    {...prevState.newLead, products: newSelectionArray }
             })
         )
     }
@@ -99,7 +99,7 @@ class FormContainer extends Component {
         let DataLead =  {
             fields:
                 {
-                    "TITLE": "Заказ с сайта от " + this.state.newLead.name,
+                    "TITLE": "Заказ с сайта от " + this.state.newLead.name + ' ' + this.state.newLead.products,
                     "NAME": this.state.newLead.name,
                     "STATUS_ID": "NEW",
                     "SOURCE_ID": "WEB",
@@ -111,7 +111,6 @@ class FormContainer extends Component {
             params: { "REGISTER_SONET_EVENT": "Y" }
         }
 
-        // fetch('https://bavalex.bitrix24.ru/rest/1/goj45yq40qiuxu8y/crm.lead.add.json',{
             fetch('https://server.dicom.team/SendForm',{
             method: "POST",
             body: JSON.stringify(DataLead),
@@ -119,18 +118,20 @@ class FormContainer extends Component {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'
             },
-        }).then(response => {
-            response.json().then(data =>{
-                document.cookie = "FormSend=true";
-                Form.send = true
-                // this.state.send = true
-                this.setState( prevState => ({ newLead :
-                        {...prevState.newLead, send: true
-                        }
-                }))
-
             })
-        })
+                .then(response => {
+                response.json()
+                    .then(data =>{
+                    document.cookie = "FormSend=true";
+                    Form.send = true
+                    // this.state.send = true
+                    this.setState( prevState => ({ newLead :
+                            {...prevState.newLead, send: true
+                            }
+                    }))
+
+                })
+            })
     }
 
     handleClearForm(e) {
@@ -141,7 +142,7 @@ class FormContainer extends Component {
                 name: '',
                 phone: '',
                 // gender: '',
-                skills: [],
+                products: [],
                 about: ''
             },
         })
@@ -189,9 +190,9 @@ class FormContainer extends Component {
                     {/*        handleChange = {this.handleInput}*/}
                     {/*/> /!* Age Selection *!/*/}
                     <CheckBox title={'Какой продукт интересует?'}
-                              name={'skills'}
+                              name={'products'}
                               options={this.state.skillOptions}
-                              selectedOptions={this.state.newLead.skills}
+                              selectedOptions={this.state.newLead.products}
                               handleChange={this.handleCheckBox}
                     /> {/* Skill */}
                     <TextArea

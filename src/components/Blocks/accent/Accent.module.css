@@ -4,7 +4,7 @@
     border-radius: 20px;
     font-size: calc(1rem + .6vw);
     margin: 0 40px;
-    color: white;
+    color: #41464b;
 }
 @media (max-width: 800px) {
     .accent {
