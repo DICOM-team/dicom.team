@@ -26,6 +26,7 @@ import Bitrix24Site from "./components/Pages/Bitrix24Site/Bitrix24Site";
 import CBitrix from "./components/Pages/CBitrix/CBitrix";
 import NuPogodi from "./components/Pages/Games/NuPogodi/NuPogodi";
 import Signx from "./components/Pages/signx/Signx";
+import OneC from "./components/Pages/OneC/OneC";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -50,7 +51,7 @@ ReactDOM.render(
                       <Route path="/Sites/tilda" element={ <Tilda title={'Dicom.Tilda'} description={'Создание сайтов на Tilda'}/> }/>
                       <Route path="/Sites/aspro" element={ <Aspro title={'Dicom.Aspro'} description={'Создание сайтов 1C Битрикс на готовом решении ASPRO'}/> }/>
                       <Route path="/Sites/cbitrix" element={ <CBitrix title={'Dicom.1C Bitrix'} description={'Создание сайтов 1C Битрикс'}/> }/>
-                      <Route path="/1c" element={ <Contacts title={'Dicom.1C'} description={'Интеграции различных систем с 1С:Предпиятием'}/> }/>
+                      <Route path="/1c" element={ <OneC title={'Dicom.1C'} description={'Официальный пердставитель компании 1С в Чебоксарах'}/> }/>
                       <Route path="/telegram-bot" element={ <TelegramBot title={'Dicom.Telegram'} description={'Разработка ботов для telegram любой сложности от 5000 руб.'}/> }/>
                       <Route path="/admin" element={ <Authorization title={'Dicom.Вход'} description={'Вход'}/> }/>
                       <Route path="*" element={<NotFound/>} />
