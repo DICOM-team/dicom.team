@@ -29,7 +29,6 @@ import Signx from "./components/Pages/signx/Signx";
 import OneC from "./components/Pages/OneC/OneC";
 
 ReactDOM.render(
-  // <React.StrictMode>
       <BrowserRouter >
           <Header/>
           <div className="App">
@@ -65,6 +64,5 @@ ReactDOM.render(
           <Footer/>
           <YMInitializer accounts={[88635494]} options={{webvisor: true}} version="2" />
       </BrowserRouter>
-  {/*</React.StrictMode>,*/}
-  document.getElementById('root')
+  , document.getElementById('root')
 );
