@@ -29,13 +29,14 @@ import Signx from "./components/Pages/signx/Signx";
 import OneC from "./components/Pages/OneC/OneC";
 
 ReactDOM.render(
-  <React.StrictMode>
+  // <React.StrictMode>
       <BrowserRouter >
           <Header/>
           <div className="App">
               <div className={'main'}>
                   <Routes>
                       <Route path="/" element={ <Main title={'DICOM.TEAM'} description={'Студия DICOM - цифровизация бизнеса!'}/> }/>
+                      <Route path="/index.html" element={ <Main title={'DICOM.TEAM'} description={'Студия DICOM - цифровизация бизнеса!'}/> }/>
                       <Route path="/Politic" element={ <Politic title={'Политика конфиденциальности'} description={'Политика конфиденциальности компании DICOM'}/> }/>
                       <Route path="/Contacts/" element={ <Contacts title={'Dicom.Контакты'} description={'Страница с контактами DICOM'} /> } />
                       {/*<Route path="/Contacts/" element={ <ContactsInside title={'Dicom.Контакты'} description={'Страница с контактами DICOM'} /> } >*/}
@@ -64,6 +65,6 @@ ReactDOM.render(
           <Footer/>
           <YMInitializer accounts={[88635494]} options={{webvisor: true}} version="2" />
       </BrowserRouter>
-  </React.StrictMode>,
+  {/*</React.StrictMode>,*/}
   document.getElementById('root')
 );
