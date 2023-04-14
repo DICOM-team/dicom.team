@@ -24,7 +24,7 @@ const Contacts = (props) => {
                     <div className="container">
                         <div className="row flex-center">
                             <div className="col-12 col-md-6">
-                                <img src="/images/contact_page2.png" width={'100%'} alt=""/>
+                                <img src="/images/content/bot_like.png" width={'100%'} alt=""/>
                             </div>
                             <div className="col-12 col-md-6">
                                 <b className={'Lage_text'}>
