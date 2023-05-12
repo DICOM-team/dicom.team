@@ -17,12 +17,13 @@ import CardButton from "../../CardButton/CardButton";
 const Aspro = (props) => {
     document.title = props.title
     document.querySelector('meta[name="description"]').content = props.description
-    document.documentElement.scrollIntoView(true);
+    // document.documentElement.scrollIntoView(true);
     let Cardbuttons = MenuSitesElements.items.map( (item, index) => {
         return (
             <div key={index} className={s.card + " col-4 col-md-3 col-xl-2"}><Link to={item.urm}><CardButton name={item.name} img={item.img}/></Link></div>
         )
     })
+
     return (
         <div>
                 <div className={s.CardsButtons + ' row'}>
