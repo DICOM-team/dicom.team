@@ -3,7 +3,7 @@ import Titleh2 from "../../Blocks/Title_H2/Titleh2";
 import Titleh3 from "../../Blocks/Title_H3/Titleh3";
 import Accent from "../../Blocks/accent/Accent";
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
-import {Tabs, Tab} from 'react-bootstrap';
+import {Tabs, Tab, Row} from 'react-bootstrap';
 
 const Contacts = (props) => {
     document.title = props.title
@@ -40,10 +40,28 @@ const Contacts = (props) => {
                 </Tab>
                 <Tab eventKey="Офис" title="Офис">
                     <Titleh2 name={'Наш офис'} subname={'428 000, г. Чебоксары, улица Ярославская, 76'} />
-                    <div>
-                        <img src="/images/office.png" width={'50%'} alt=""/>
-                    </div>
-                    <Accent context={'Офис 514'}/>
+                    <Row>
+                        <div className={'col-12 col-md-6'} style={{
+                            backgroundImage: 'url("/images/office.png")',
+                            backgroundSize: "cover",
+                            height: "30vh",
+                            backgroundRepeat: "no-repeat"
+                        }}></div>
+                        <div className={'col-12 col-md-6'} style={{
+                            backgroundImage: 'url("/images/content/contacts/web.jpeg")',
+                            backgroundSize: "cover",
+                            height: "30vh",
+                            backgroundRepeat: "no-repeat"
+                        }}></div>
+                    </Row>
+                    <Row>
+                        <div className={'col'}>
+                            <Accent context={'Офис 513 (проектный отдел)'}/>
+                        </div>
+                        <div className={'col'}>
+                            <Accent context={'Офис 514 (отдел Web разработки)'}/>
+                        </div>
+                    </Row>
                 </Tab>
                 <Tab eventKey="Реквизиты" title="Реквизиты">
                     <Titleh3 name={'Реквизиты'} subname={'ИП Бакшандаев А.В.'} />
