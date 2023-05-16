@@ -27,7 +27,7 @@ const Main = (props) => {
                 <div className={s.CardsButtons + ' row'}>
                     {Cardbuttons}
                 </div>
-                <img width={'75%'} src="/images/content/bot_comp.png" alt="Dicom team"/>
+                <img style={{maxWidth: "500px"}} width={'75%'} src="/images/content/bot_comp.png" alt="Dicom team"/>
             </ReactCSSTransitionGroup>
         </div>
     );
