@@ -14,28 +14,31 @@
 }
 .name {
     color: black;
-    font-size: calc(.5em + .4vw);
+    font-size: calc(.8em + .5vw);
     padding-bottom: 10px;
     padding-top: 30px;
 }
 @media (max-width: 720px) {
     .body {
-        width: 12vw;
-        height: 12vw;
+        width: 22vw;
+        height: 22vw;
     }
 }
 @media (min-width: 960px) {
     .body {
-        width: 8vw;
-        height: 8vw;
+        width: 12vw;
+        height: 12vw;
     }
     .name {
-        /*font-size: 4vw!important;*/
+        font-size: calc(.6em + .5vw);
     }
 }
 @media (min-width: 1200px) {
     .body {
-        width: 4vw;
-        height: 4vw;
+        width: 6vw;
+        height: 6vw;
+    }
+    .name {
+        font-size: calc(.4em + .5vw);
     }
 }

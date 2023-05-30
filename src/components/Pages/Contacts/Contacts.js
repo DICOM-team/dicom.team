@@ -45,10 +45,11 @@ const Contacts = (props) => {
                             backgroundImage: 'url("/images/office.png")',
                             backgroundSize: "cover",
                             height: "30vh",
-                            backgroundRepeat: "no-repeat"
+                            backgroundRepeat: "no-repeat",
+                            backgroundPositionY: '-100px'
                         }}></div>
                         <div className={'col-12 col-md-6'} style={{
-                            backgroundImage: 'url("/images/content/contacts/web.jpeg")',
+                            backgroundImage: 'url("/images/content/Contacts/web.jpeg")',
                             backgroundSize: "cover",
                             height: "30vh",
                             backgroundRepeat: "no-repeat"

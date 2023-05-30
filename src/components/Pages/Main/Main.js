@@ -11,7 +11,7 @@ const Main = (props) => {
     document.documentElement.scrollIntoView(true);
     let Cardbuttons = mainMenu.items.map( (item, index) => {
         return (
-            <div key={index} className={s.card + " col-4 col-md-3 col-xl-2"}><Link to={item.urm}><CardButton name={item.name} img={item.img}/></Link></div>
+            <div key={index} className={s.card + " col-6 col-md-4 col-xl-3"}><Link to={item.urm}><CardButton name={item.name} img={item.img}/></Link></div>
         )
     })
 
